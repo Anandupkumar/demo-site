@@ -1,26 +1,123 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --leather: #2c1810;
+  --leather-mid: #3d2418;
+  --leather-light: #5a3828;
+  --parchment: #f4efe4;
+  --parchment-deep: #e8dfd0;
+  --ink: #2a1f18;
+  --ink-soft: #5c4a3a;
+  --gold: #c4a574;
+  --gold-deep: #a07d4a;
+  --cream: #faf6ee;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-leather: var(--leather);
+  --color-leather-mid: var(--leather-mid);
+  --color-leather-light: var(--leather-light);
+  --color-parchment: var(--parchment);
+  --color-parchment-deep: var(--parchment-deep);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-gold: var(--gold);
+  --color-gold-deep: var(--gold-deep);
+  --color-cream: var(--cream);
+  --font-heading: var(--font-cinzel);
+  --font-body: var(--font-source-serif);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--parchment);
+  color: var(--ink);
+  font-family: var(--font-source-serif), "Times New Roman", serif;
+}
+
+/* Leather: layered browns + grain so the hero feels like the mock without a photo. */
+.texture-leather {
+  background-color: var(--leather);
+  background-image:
+    radial-gradient(ellipse at 18% 12%, rgba(90, 56, 36, 0.45), transparent 52%),
+    radial-gradient(ellipse at 82% 88%, rgba(14, 8, 4, 0.55), transparent 50%),
+    radial-gradient(ellipse at 50% 40%, rgba(196, 165, 116, 0.08), transparent 45%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.18'/%3E%3C/svg%3E");
+}
+
+.texture-parchment {
+  background-color: var(--parchment);
+  background-image:
+    radial-gradient(ellipse at 8% 0%, rgba(180, 140, 90, 0.1), transparent 42%),
+    radial-gradient(ellipse at 100% 100%, rgba(140, 110, 70, 0.08), transparent 48%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.07'/%3E%3C/svg%3E");
+}
+
+.prose-church {
+  color: var(--ink-soft);
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+.prose-church > * + * {
+  margin-top: 1.15rem;
+}
+
+.prose-church h2 {
+  color: var(--ink);
+  font-family: var(--font-cinzel), serif;
+  font-size: 1.35rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-top: 2.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose-church p {
+  margin-top: 1.1rem;
+}
+
+.prose-church strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.prose-church a {
+  color: var(--gold-deep);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.prose-church a:hover {
+  color: var(--leather-mid);
+}
+
+.prose-church blockquote {
+  border-left: 2px solid var(--gold);
+  padding-left: 1.25rem;
+  margin: 1.75rem 0;
+  color: var(--ink);
+  font-style: italic;
+}
+
+.prose-church ul,
+.prose-church ol {
+  padding-left: 1.25rem;
+  margin-top: 1rem;
+}
+
+.prose-church li + li {
+  margin-top: 0.4rem;
+}
+
+.prose-church ol {
+  list-style: decimal;
+}
+
+.prose-church ul {
+  list-style: disc;
 }

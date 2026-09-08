@@ -1,69 +1,150 @@
-import Image from "next/image";
+import { Container } from "@/components/Container";
+import { CtaButton } from "@/components/CtaButton";
+import { FeatureCard } from "@/components/FeatureCard";
+import { MeetingTimes } from "@/components/MeetingTimes";
+import { Ornament } from "@/components/Ornament";
+import { Scripture } from "@/components/Scripture";
+import { SectionHeading } from "@/components/SectionHeading";
+import { SiteImage } from "@/components/SiteImage";
+import { getSiteConfig } from "@/lib/content";
+import { media } from "@/lib/media";
 
-export default function Home() {
+export default function HomePage() {
+  const site = getSiteConfig();
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
+    <>
+      <section className="relative flex min-h-[100svh] items-center justify-center overflow-hidden px-6 text-center text-parchment">
+        <div className="absolute inset-0">
+          <SiteImage
+            src={media.sunset.src}
+            alt=""
+            className="h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-leather/70" />
+          <div className="absolute inset-0 texture-leather opacity-50" />
+        </div>
+        <div className="relative z-10 mx-auto max-w-3xl py-28">
+          <h1 className="font-heading text-[1.65rem] leading-[1.25] tracking-[0.16em] uppercase sm:text-5xl sm:leading-[1.2] sm:tracking-[0.18em]">
+            Manchester
+            <br />
+            Apostolic
+            <br />
+            Brethren Church
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <div className="mt-8">
+            <Ornament />
+          </div>
+          <p className="mt-8 font-heading text-[0.78rem] tracking-[0.32em] uppercase text-parchment/90 sm:text-sm">
+            {site.motto}
+          </p>
+          <p className="mt-4 font-heading text-[0.65rem] tracking-[0.28em] uppercase text-gold">
+            {site.verseReference}
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
+      </section>
+
+      <section className="texture-parchment">
+        <Container className="grid items-center gap-12 py-20 sm:py-24 lg:grid-cols-2">
+          <div className="overflow-hidden border border-leather/10 shadow-sm">
+            <SiteImage
+              src={media.prayer.src}
+              alt={media.prayer.alt}
+              className="h-full min-h-[22rem] w-full object-cover"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          </div>
+          <div>
+            <SectionHeading align="left">Welcome</SectionHeading>
+            <div className="mt-8 max-w-xl text-lg leading-[1.85] text-ink-soft">
+              {site.welcome.map((paragraph) => (
+                <p key={paragraph} className="mt-5 first:mt-0">
+                  {paragraph}
+                </p>
+              ))}
+              <p className="mt-6 font-semibold text-ink">{site.confession}</p>
+              <p className="mt-5">{site.hope}</p>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="grid grid-cols-3">
+        {[media.bible, media.glass, media.cross].map((item) => (
+          <div key={item.src} className="aspect-[4/3] overflow-hidden sm:aspect-[16/9]">
+            <SiteImage
+              src={item.src}
+              alt={item.alt}
+              className="h-full w-full object-cover"
+            />
+          </div>
+        ))}
+      </section>
+
+      <section className="border-y border-leather/10 bg-parchment-deep/40">
+        <Container className="py-20 sm:py-24">
+          <SectionHeading eyebrow="This week">Gatherings</SectionHeading>
+          <div className="mt-12">
+            <MeetingTimes meetings={site.gatherings} note={site.timesNote} />
+          </div>
+          <div className="mt-10 text-center">
+            <CtaButton href="/gatherings/">View gatherings</CtaButton>
+          </div>
+        </Container>
+      </section>
+
+      <section className="texture-parchment">
+        <Container className="py-20 sm:py-24">
+          <SectionHeading eyebrow="Find your way">Come and see</SectionHeading>
+          <div className="mt-12 grid gap-8 md:grid-cols-2">
+            <FeatureCard
+              href="/visit/"
+              image={media.cross.src}
+              imageAlt={media.cross.alt}
+              eyebrow="First time"
+              title="Plan your visit"
+            >
+              Come as you are. A simple hall, the Scriptures, and a people
+              gathered unto His Name. You do not need to book.
+            </FeatureCard>
+            <FeatureCard
+              href="/the-gospel/"
+              image={media.sunset.src}
+              imageAlt={media.sunset.alt}
+              eyebrow="Good news"
+              title="The Gospel"
+            >
+              {site.confession} Hear the gospel we preach, and the Scriptures we
+              stand upon.
+            </FeatureCard>
+          </div>
+        </Container>
+      </section>
+
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0">
+          <SiteImage
+            src={media.bible.src}
+            alt=""
+            className="h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-leather/80" />
         </div>
-      </main>
-    </div>
+        <Container className="relative flex flex-col items-center py-24 text-center">
+          <Scripture
+            text={site.verse}
+            reference={site.verseReference}
+            tone="light"
+          />
+          <div className="mt-10 flex flex-wrap justify-center gap-4">
+            <CtaButton href="/contact/" variant="light">
+              Find us
+            </CtaButton>
+            <CtaButton href="/visit/" variant="outline">
+              Plan a visit
+            </CtaButton>
+          </div>
+        </Container>
+      </section>
+    </>
   );
 }

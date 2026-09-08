@@ -1,0 +1,103 @@
+import type { Metadata } from "next";
+import { ContactForm } from "@/components/ContactForm";
+import { Container } from "@/components/Container";
+import { MarkdownBody } from "@/components/MarkdownBody";
+import { PageHero } from "@/components/PageHero";
+import { SiteImage } from "@/components/SiteImage";
+import { getPage, getSiteConfig, mapsEmbedUrl, mapsUrl } from "@/lib/content";
+import { media } from "@/lib/media";
+
+const page = getPage("contact");
+
+export const metadata: Metadata = {
+  title: page.title,
+  description: page.description,
+};
+
+export default function ContactPage() {
+  const site = getSiteConfig();
+
+  return (
+    <>
+      <PageHero
+        title={page.title}
+        description={page.description}
+        image={media.cross.src}
+        imageAlt={media.cross.alt}
+      />
+      <section className="texture-parchment">
+        <div className="h-48 overflow-hidden sm:h-64">
+          <SiteImage
+            src={media.prayer.src}
+            alt={media.prayer.alt}
+            className="h-full w-full object-cover"
+          />
+        </div>
+        <Container className="grid gap-12 py-16 sm:py-20 lg:grid-cols-2">
+          <div>
+            <MarkdownBody content={page.body} />
+            <dl className="mt-8 space-y-4 text-ink-soft">
+              <div>
+                <dt className="font-heading text-[0.68rem] tracking-[0.2em] uppercase text-gold-deep">
+                  Address
+                </dt>
+                <dd className="mt-1">
+                  {site.address}
+                  {site.postcode ? `, ${site.postcode}` : ""}
+                </dd>
+              </div>
+              {site.phone ? (
+                <div>
+                  <dt className="font-heading text-[0.68rem] tracking-[0.2em] uppercase text-gold-deep">
+                    Telephone
+                  </dt>
+                  <dd className="mt-1">
+                    <a href={`tel:${site.phone}`} className="hover:text-ink">
+                      {site.phone}
+                    </a>
+                  </dd>
+                </div>
+              ) : null}
+              {site.email ? (
+                <div>
+                  <dt className="font-heading text-[0.68rem] tracking-[0.2em] uppercase text-gold-deep">
+                    Email
+                  </dt>
+                  <dd className="mt-1">
+                    <a href={`mailto:${site.email}`} className="hover:text-ink">
+                      {site.email}
+                    </a>
+                  </dd>
+                </div>
+              ) : null}
+            </dl>
+            <a
+              href={mapsUrl(site.mapQuery)}
+              className="mt-6 inline-block font-heading text-[0.7rem] tracking-[0.2em] uppercase text-gold-deep underline underline-offset-4"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Open in Google Maps
+            </a>
+            <div className="mt-8 overflow-hidden border border-leather/15">
+              <iframe
+                title={`Map of ${site.name}`}
+                src={mapsEmbedUrl(site.mapQuery)}
+                className="h-64 w-full"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div>
+            <h2 className="font-heading text-2xl tracking-[0.12em] uppercase text-ink">
+              Write to us
+            </h2>
+            <div className="mt-6">
+              <ContactForm email={site.email} />
+            </div>
+          </div>
+        </Container>
+      </section>
+    </>
+  );
+}
