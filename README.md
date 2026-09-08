@@ -10,7 +10,15 @@ npm test
 npm run build
 ```
 
-`npm run build` writes a static site to `out/`. Deploy that folder to Netlify, GitHub Pages, or Cloudflare Pages.
+`npm run build` writes a static site to `out/`. Next.js generates `index.html` — do not create it by hand.
+
+## GitHub Pages
+
+Pushing `main` deploys `out/` via `.github/workflows/pages.yml`.
+
+In the GitHub repo: **Settings → Pages → Source: GitHub Actions**.
+
+The live URL will be `https://anandu-dooth.github.io/demo-site/`.
 
 ## Content
 

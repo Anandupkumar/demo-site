@@ -18,3 +18,7 @@ Replace placeholders in `content/site.md` before a public launch (address, times
 Raised the visual design using patterns from [St Paul’s](https://www.stpauls.co.uk/) and [The Methodist Church](https://www.methodist.org.uk/): photograph heroes, a welcome split with an image, a three-image strip, visit/gospel cards, and image-led gathering rows.
 
 Photographs are stock (Pexels) in `public/images/`. Swap them for pictures of the Atherton hall and people when available.
+
+## 8 September 2026 — GitHub Pages static export
+
+Confirmed `output: 'export'` and `images.unoptimized`. Added `public/.nojekyll`, `/demo-site` `basePath` for CI, and a GitHub Actions Pages workflow. `npm run build` writes `out/` including `index.html`.

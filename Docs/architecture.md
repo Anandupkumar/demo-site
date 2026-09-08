@@ -10,7 +10,7 @@ Static Next.js site for Manchester Apostolic Brethren Church. There is no server
 - Markdown in `content/` parsed by `gray-matter`
 - Host: any static host (Netlify, GitHub Pages, Cloudflare Pages)
 
-`next build` writes HTML/CSS/JS to `out/`.
+`next build` writes HTML/CSS/JS to `out/`. GitHub Pages is configured in `.github/workflows/pages.yml`. CI sets `GITHUB_PAGES=true` so `basePath` is `/demo-site`. `public/.nojekyll` stops GitHub from hiding the `_next` folder.
 
 ## Content model
 

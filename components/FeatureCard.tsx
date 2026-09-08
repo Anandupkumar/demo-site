@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 import { SiteImage } from "@/components/SiteImage";
 
 type FeatureCardProps = {
@@ -7,7 +8,7 @@ type FeatureCardProps = {
   imageAlt: string
   eyebrow: string
   title: string
-  children: string
+  children: ReactNode
 };
 
 export function FeatureCard({
