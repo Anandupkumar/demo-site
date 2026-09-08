@@ -24,4 +24,4 @@ The live URL will be `https://anandu-dooth.github.io/demo-site/`.
 
 Edit Markdown in `content/`. Church name, motto, times, and address live in `content/site.md`. Page copy lives in `content/pages/`.
 
-See `Docs/architecture.md` and `Docs/design.md`.
+See `Docs/architecture.md` and `Docs/design.md`
