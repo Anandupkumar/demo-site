@@ -12,6 +12,8 @@ Static Next.js site for Manchester Apostolic Brethren Church. There is no server
 
 `next build` writes HTML/CSS/JS to `out/`. GitHub Pages is configured in `.github/workflows/pages.yml`. CI sets `GITHUB_PAGES=true` so `basePath` is `/demo-site`. `public/.nojekyll` stops GitHub from hiding the `_next` folder.
 
+Plain `<img>` tags do not get `basePath` automatically. `lib/asset.ts` prefixes public files; `SiteImage` uses it.
+
 ## Content model
 
 | Path | Purpose |

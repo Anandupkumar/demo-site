@@ -22,3 +22,7 @@ Photographs are stock (Pexels) in `public/images/`. Swap them for pictures of th
 ## 8 September 2026 — GitHub Pages static export
 
 Confirmed `output: 'export'` and `images.unoptimized`. Added `public/.nojekyll`, `/demo-site` `basePath` for CI, and a GitHub Actions Pages workflow. `npm run build` writes `out/` including `index.html`.
+
+## 8 September 2026 — GitHub Pages image 404
+
+Images used root paths (`/images/...`) which resolve to `github.io/images/...` instead of `github.io/demo-site/images/...`. `SiteImage` now prefixes with `NEXT_PUBLIC_BASE_PATH`.

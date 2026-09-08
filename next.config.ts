@@ -4,6 +4,7 @@ import type { NextConfig } from "next";
 // Set GITHUB_PAGES=true in CI so assets resolve under /demo-site.
 const repoName = "demo-site";
 const isGithubPages = process.env.GITHUB_PAGES === "true";
+const basePath = isGithubPages ? `/${repoName}` : "";
 
 const nextConfig: NextConfig = {
   output: "export",
@@ -11,12 +12,15 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  ...(isGithubPages
+  ...(basePath
     ? {
-        basePath: `/${repoName}`,
-        assetPrefix: `/${repoName}/`,
+        basePath,
+        assetPrefix: `${basePath}/`,
       }
     : {}),
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
 };
 
 export default nextConfig;
