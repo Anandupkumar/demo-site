@@ -40,7 +40,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en-GB"
       className={`${cinzel.variable} ${sourceSerif.variable} h-full`}
     >
-      <body className="min-h-full flex flex-col texture-parchment font-body antialiased">
+      <body className="min-h-full flex flex-col bg-parchment font-body antialiased">
         <JsonLd site={site} />
         <Header name={site.name} />
         <div className="flex-1">{children}</div>

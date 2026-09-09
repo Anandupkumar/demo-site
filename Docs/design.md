@@ -1,15 +1,15 @@
 # Design
 
-The visual system follows the supplied mobile mock: leather hero, parchment body, serif type, scripture-led tone.
+The visual system follows the supplied mobile mock: solid burgundy hero, cream body, serif type, scripture-led tone. No photographic backgrounds.
 
 ## Tokens
 
 | Token | Use |
 |---|---|
-| `--leather` `#2c1810` | Hero, header (inner pages), footer |
-| `--parchment` `#f4efe4` | Page background |
-| `--ink` `#2a1f18` | Headings and body |
-| `--gold` `#c4a574` | Motto lines, ornaments, active nav |
+| `--leather` `#3d1b11` | Hero, header (inner pages), footer |
+| `--parchment` `#f5f3e7` | Page background |
+| `--ink` `#1a0d08` | Headings and body |
+| `--gold` `#e8dcc8` | Motto lines on burgundy |
 
 Fonts: Cinzel (headings, small-caps) and Source Serif 4 (body).
 
@@ -23,8 +23,7 @@ Fonts: Cinzel (headings, small-caps) and Source Serif 4 (body).
 
 ## Layout
 
-- Home: full-viewport leather wordmark over a photograph, then parchment welcome with a photo, image strip, and visit/gospel cards
-- Inner pages: photograph title band with a leather overlay, then parchment article with supporting images
+- Home: full-viewport solid burgundy wordmark, then centered cream Welcome
+- Inner pages: solid burgundy title band, cream article
 - Top nav: Home, Visit, Gatherings, About, Contact
-- Footer: photo strip, columns, The Gospel, Safeguarding, Privacy, address, Matthew 18:20
-- Photographs live in `public/images/` and are listed in `lib/media.ts`. Current files are stock from Pexels; replace with pictures of the Atherton hall and people when they are available.
+- Footer: The Gospel, Safeguarding, Privacy, address, Matthew 18:20

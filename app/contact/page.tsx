@@ -3,9 +3,7 @@ import { ContactForm } from "@/components/ContactForm";
 import { Container } from "@/components/Container";
 import { MarkdownBody } from "@/components/MarkdownBody";
 import { PageHero } from "@/components/PageHero";
-import { SiteImage } from "@/components/SiteImage";
 import { getPage, getSiteConfig, mapsEmbedUrl, mapsUrl } from "@/lib/content";
-import { media } from "@/lib/media";
 
 const page = getPage("contact");
 
@@ -19,20 +17,8 @@ export default function ContactPage() {
 
   return (
     <>
-      <PageHero
-        title={page.title}
-        description={page.description}
-        image={media.cross.src}
-        imageAlt={media.cross.alt}
-      />
-      <section className="texture-parchment">
-        <div className="h-48 overflow-hidden sm:h-64">
-          <SiteImage
-            src={media.prayer.src}
-            alt={media.prayer.alt}
-            className="h-full w-full object-cover"
-          />
-        </div>
+      <PageHero title={page.title} description={page.description} />
+      <section className="bg-parchment">
         <Container className="grid gap-12 py-16 sm:py-20 lg:grid-cols-2">
           <div>
             <MarkdownBody content={page.body} />

@@ -18,7 +18,7 @@ export function Header({ name }: HeaderProps) {
       className={
         overlay
           ? "absolute inset-x-0 top-0 z-30"
-          : "sticky top-0 z-30 texture-leather text-parchment"
+          : "sticky top-0 z-30 bg-leather text-parchment"
       }
     >
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-5 sm:px-8">
@@ -96,7 +96,7 @@ function MobileNav({ overlay }: { overlay: boolean }) {
       {open ? (
         <div
           id="mobile-nav"
-          className="fixed inset-0 z-40 flex flex-col texture-leather px-8 pt-24 lg:hidden"
+          className="fixed inset-0 z-40 flex flex-col bg-leather px-8 pt-24 lg:hidden"
         >
           <button
             type="button"

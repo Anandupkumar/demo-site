@@ -1,10 +1,8 @@
 import Link from "next/link";
 import { Container } from "@/components/Container";
 import { Ornament } from "@/components/Ornament";
-import { SiteImage } from "@/components/SiteImage";
 import type { SiteConfig } from "@/lib/content";
 import { footerNav, mainNav } from "@/lib/nav";
-import { media } from "@/lib/media";
 
 type FooterProps = {
   site: SiteConfig
@@ -12,18 +10,7 @@ type FooterProps = {
 
 export function Footer({ site }: FooterProps) {
   return (
-    <footer className="texture-leather text-parchment">
-      <div className="grid grid-cols-3">
-        {[media.prayer, media.bible, media.sunset].map((item) => (
-          <div key={item.src} className="h-20 overflow-hidden opacity-40 sm:h-28">
-            <SiteImage
-              src={item.src}
-              alt=""
-              className="h-full w-full object-cover"
-            />
-          </div>
-        ))}
-      </div>
+    <footer className="bg-leather text-parchment">
       <Container className="py-16">
         <p className="text-center font-heading text-sm tracking-[0.2em] uppercase">
           {site.name}

@@ -26,3 +26,7 @@ Confirmed `output: 'export'` and `images.unoptimized`. Added `public/.nojekyll`,
 ## 8 September 2026 — GitHub Pages image 404
 
 Images used root paths (`/images/...`) which resolve to `github.io/images/...` instead of `github.io/demo-site/images/...`. `SiteImage` now prefixes with `NEXT_PUBLIC_BASE_PATH`.
+
+## 9 September 2026 — Solid mock colours
+
+Restored the supplied mock palette: solid burgundy `#3d1b11` and cream `#f5f3e7`. Removed photographic backgrounds and image strips so the hero and welcome match the original design.

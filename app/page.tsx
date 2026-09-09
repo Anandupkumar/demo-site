@@ -5,26 +5,15 @@ import { MeetingTimes } from "@/components/MeetingTimes";
 import { Ornament } from "@/components/Ornament";
 import { Scripture } from "@/components/Scripture";
 import { SectionHeading } from "@/components/SectionHeading";
-import { SiteImage } from "@/components/SiteImage";
 import { getSiteConfig } from "@/lib/content";
-import { media } from "@/lib/media";
 
 export default function HomePage() {
   const site = getSiteConfig();
 
   return (
     <>
-      <section className="relative flex min-h-[100svh] items-center justify-center overflow-hidden px-6 text-center text-parchment">
-        <div className="absolute inset-0">
-          <SiteImage
-            src={media.sunset.src}
-            alt=""
-            className="h-full w-full object-cover"
-          />
-          <div className="absolute inset-0 bg-leather/70" />
-          <div className="absolute inset-0 texture-leather opacity-50" />
-        </div>
-        <div className="relative z-10 mx-auto max-w-3xl py-28">
+      <section className="relative flex min-h-screen items-center justify-center bg-leather px-6 text-center text-parchment">
+        <div className="mx-auto max-w-3xl py-28">
           <h1 className="font-heading text-[1.65rem] leading-[1.25] tracking-[0.16em] uppercase sm:text-5xl sm:leading-[1.2] sm:tracking-[0.18em]">
             Manchester
             <br />
@@ -44,43 +33,22 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="texture-parchment">
-        <Container className="grid items-center gap-12 py-20 sm:py-24 lg:grid-cols-2">
-          <div className="overflow-hidden border border-leather/10 shadow-sm">
-            <SiteImage
-              src={media.prayer.src}
-              alt={media.prayer.alt}
-              className="h-full min-h-[22rem] w-full object-cover"
-            />
-          </div>
-          <div>
-            <SectionHeading align="left">Welcome</SectionHeading>
-            <div className="mt-8 max-w-xl text-lg leading-[1.85] text-ink-soft">
-              {site.welcome.map((paragraph) => (
-                <p key={paragraph} className="mt-5 first:mt-0">
-                  {paragraph}
-                </p>
-              ))}
-              <p className="mt-6 font-semibold text-ink">{site.confession}</p>
-              <p className="mt-5">{site.hope}</p>
-            </div>
+      <section className="bg-parchment">
+        <Container className="flex flex-col items-center py-20 sm:py-24">
+          <SectionHeading>Welcome</SectionHeading>
+          <div className="mt-10 max-w-2xl text-center text-lg leading-[1.85] text-ink-soft">
+            {site.welcome.map((paragraph) => (
+              <p key={paragraph} className="mt-5 first:mt-0">
+                {paragraph}
+              </p>
+            ))}
+            <p className="mt-6 font-semibold text-ink">{site.confession}</p>
+            <p className="mt-5">{site.hope}</p>
           </div>
         </Container>
       </section>
 
-      <section className="grid grid-cols-3">
-        {[media.bible, media.glass, media.cross].map((item) => (
-          <div key={item.src} className="aspect-[4/3] overflow-hidden sm:aspect-[16/9]">
-            <SiteImage
-              src={item.src}
-              alt={item.alt}
-              className="h-full w-full object-cover"
-            />
-          </div>
-        ))}
-      </section>
-
-      <section className="border-y border-leather/10 bg-parchment-deep/40">
+      <section className="border-y border-leather/10 bg-parchment-deep">
         <Container className="py-20 sm:py-24">
           <SectionHeading eyebrow="This week">Gatherings</SectionHeading>
           <div className="mt-12">
@@ -92,14 +60,12 @@ export default function HomePage() {
         </Container>
       </section>
 
-      <section className="texture-parchment">
+      <section className="bg-parchment">
         <Container className="py-20 sm:py-24">
           <SectionHeading eyebrow="Find your way">Come and see</SectionHeading>
           <div className="mt-12 grid gap-8 md:grid-cols-2">
             <FeatureCard
               href="/visit/"
-              image={media.cross.src}
-              imageAlt={media.cross.alt}
               eyebrow="First time"
               title="Plan your visit"
             >
@@ -108,8 +74,6 @@ export default function HomePage() {
             </FeatureCard>
             <FeatureCard
               href="/the-gospel/"
-              image={media.sunset.src}
-              imageAlt={media.sunset.alt}
               eyebrow="Good news"
               title="The Gospel"
             >
@@ -120,16 +84,8 @@ export default function HomePage() {
         </Container>
       </section>
 
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0">
-          <SiteImage
-            src={media.bible.src}
-            alt=""
-            className="h-full w-full object-cover"
-          />
-          <div className="absolute inset-0 bg-leather/80" />
-        </div>
-        <Container className="relative flex flex-col items-center py-24 text-center">
+      <section className="bg-leather">
+        <Container className="flex flex-col items-center py-20 text-center">
           <Scripture
             text={site.verse}
             reference={site.verseReference}

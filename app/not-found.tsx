@@ -3,7 +3,7 @@ import { CtaButton } from "@/components/CtaButton";
 
 export default function NotFound() {
   return (
-    <section className="texture-parchment">
+    <section className="bg-parchment">
       <Container className="flex min-h-[60vh] flex-col items-center justify-center py-24 text-center">
         <p className="font-heading text-[0.7rem] tracking-[0.28em] uppercase text-gold-deep">
           404

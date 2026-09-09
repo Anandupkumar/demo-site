@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --leather: #2c1810;
-  --leather-mid: #3d2418;
-  --leather-light: #5a3828;
-  --parchment: #f4efe4;
-  --parchment-deep: #e8dfd0;
-  --ink: #2a1f18;
-  --ink-soft: #5c4a3a;
-  --gold: #c4a574;
-  --gold-deep: #a07d4a;
-  --cream: #faf6ee;
+  --leather: #3d1b11;
+  --leather-mid: #4a2015;
+  --leather-light: #5c2a1c;
+  --parchment: #f5f3e7;
+  --parchment-deep: #ebe6d6;
+  --ink: #1a0d08;
+  --ink-soft: #3d2a22;
+  --gold: #e8dcc8;
+  --gold-deep: #4a2015;
+  --cream: #fcf9f2;
 }
 
 @theme inline {
@@ -38,22 +38,12 @@ body {
   font-family: var(--font-source-serif), "Times New Roman", serif;
 }
 
-/* Leather: layered browns + grain so the hero feels like the mock without a photo. */
 .texture-leather {
   background-color: var(--leather);
-  background-image:
-    radial-gradient(ellipse at 18% 12%, rgba(90, 56, 36, 0.45), transparent 52%),
-    radial-gradient(ellipse at 82% 88%, rgba(14, 8, 4, 0.55), transparent 50%),
-    radial-gradient(ellipse at 50% 40%, rgba(196, 165, 116, 0.08), transparent 45%),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.18'/%3E%3C/svg%3E");
 }
 
 .texture-parchment {
   background-color: var(--parchment);
-  background-image:
-    radial-gradient(ellipse at 8% 0%, rgba(180, 140, 90, 0.1), transparent 42%),
-    radial-gradient(ellipse at 100% 100%, rgba(140, 110, 70, 0.08), transparent 48%),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.07'/%3E%3C/svg%3E");
 }
 
 .prose-church {
