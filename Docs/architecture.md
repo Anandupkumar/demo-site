@@ -18,12 +18,16 @@ Plain `<img>` tags do not get `basePath` automatically. `lib/asset.ts` prefixes 
 
 | Path | Purpose |
 |---|---|
-| `content/site.md` | Name, motto, verse, address, meeting times |
-| `content/pages/*.md` | About, visit, gatherings intro, gospel, contact, safeguarding, privacy |
-| `content/gatherings/*.md` | Individual meeting types |
+| `content/site.md` | Name, motto, verse, welcome fields, meeting times |
+| `content/pages/*.md` | What we are, services, join us, our beginnings, contact, safeguarding, privacy |
+| `content/gatherings/*.md` | Optional longer notes for individual meeting types |
 | `content/posts/` | Reserved for a future news/blog |
 
 `lib/content.ts` is the only place that reads files. Pages render typed data. A later CMS should replace this loader, not the React pages.
+
+## Public routes
+
+Home, What we are, Services, Join us for fellowship, Our beginnings, Contact, Safeguarding, Privacy.
 
 ## What static export cannot use
 

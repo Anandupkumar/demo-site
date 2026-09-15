@@ -30,6 +30,12 @@ export type SiteConfig = {
   hope: string
   timesNote: string
   welcome: string[]
+  ministry: string
+  inclusion: string
+  acts242: string
+  acts242Ref: string
+  sundayHighlight: string
+  sundayInvite: string
   gatherings: Meeting[]
 };
 
@@ -64,13 +70,13 @@ export type Post = {
 };
 
 export const REQUIRED_PAGE_SLUGS = [
-  "about",
-  "visit",
-  "gatherings",
-  "gospel",
+  "what-we-are",
+  "services",
+  "join-us",
+  "our-beginnings",
+  "contact",
   "safeguarding",
   "privacy",
-  "contact",
 ] as const;
 
 function asString(value: unknown, fallback = ""): string {
@@ -132,6 +138,12 @@ export function parseSiteMarkdown(raw: string): SiteConfig {
     hope: asString(data.hope),
     timesNote: asString(data.timesNote),
     welcome,
+    ministry: asString(data.ministry),
+    inclusion: asString(data.inclusion),
+    acts242: asString(data.acts242),
+    acts242Ref: asString(data.acts242Ref),
+    sundayHighlight: asString(data.sundayHighlight),
+    sundayInvite: asString(data.sundayInvite),
     gatherings,
   };
 }

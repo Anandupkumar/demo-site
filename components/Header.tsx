@@ -5,9 +5,9 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { mainNav } from "@/lib/nav";
 
-type HeaderProps = {
+type HeaderProps = Readonly<{
   name: string
-};
+}>;
 
 export function Header({ name }: HeaderProps) {
   const pathname = usePathname();
@@ -21,52 +21,48 @@ export function Header({ name }: HeaderProps) {
           : "sticky top-0 z-30 bg-leather text-parchment"
       }
     >
-      <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-5 sm:px-8">
-        {overlay ? (
-          <span className="sr-only">{name}</span>
-        ) : (
+      <div className="relative mx-auto min-h-14 max-w-6xl px-6 py-4 sm:px-8">
+        {/* Remount on route change so the drawer closes without setState-in-effect. */}
+        <MobileNav key={pathname} overlay={overlay} />
+
+        {/* The home hero already carries the name as the h1, so only inner pages repeat it. */}
+        {overlay ? null : (
           <Link
             href="/"
-            className="max-w-[14rem] font-heading text-[0.7rem] leading-snug tracking-[0.16em] uppercase text-parchment sm:max-w-none sm:text-sm sm:tracking-[0.18em]"
+            className="block max-w-[calc(100%-3.5rem)] py-1 font-heading text-[0.95rem] leading-snug text-parchment md:max-w-none md:text-center md:text-xl"
           >
             {name}
           </Link>
         )}
 
-        <nav className="hidden items-center gap-8 lg:flex" aria-label="Main">
+        <nav
+          className={`hidden flex-wrap items-center justify-center gap-x-5 gap-y-2 md:flex ${
+            overlay ? "" : "md:mt-3"
+          }`}
+          aria-label="Main"
+        >
           {mainNav.map((item) => {
-            const active =
-              item.href === "/"
-                ? pathname === "/"
-                : pathname.startsWith(item.href);
+            const current = pathname === item.href || pathname === item.href.replace(/\/$/, "");
             return (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`font-heading text-[0.7rem] tracking-[0.22em] uppercase transition-colors ${
-                  overlay
-                    ? active
-                      ? "text-white"
-                      : "text-white/75 hover:text-white"
-                    : active
-                      ? "text-gold"
-                      : "text-parchment/80 hover:text-parchment"
+                className={`whitespace-nowrap font-heading text-[0.7rem] tracking-[0.12em] uppercase hover:text-gold ${
+                  current ? "text-gold" : "text-parchment/90"
                 }`}
+                aria-current={current ? "page" : undefined}
               >
                 {item.label}
               </Link>
             );
           })}
         </nav>
-
-        {/* Remount on route change so the drawer closes without setState-in-effect. */}
-        <MobileNav key={pathname} overlay={overlay} />
       </div>
     </header>
   );
 }
 
-function MobileNav({ overlay }: { overlay: boolean }) {
+function MobileNav({ overlay }: Readonly<{ overlay: boolean }>) {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -77,10 +73,10 @@ function MobileNav({ overlay }: { overlay: boolean }) {
   }, [open]);
 
   return (
-    <>
+    <div className="absolute right-4 top-3 sm:right-6 md:hidden">
       <button
         type="button"
-        className={`ml-auto p-2 lg:hidden ${overlay ? "text-white" : "text-parchment"}`}
+        className={`p-2 ${overlay ? "text-white" : "text-parchment"}`}
         aria-expanded={open}
         aria-controls="mobile-nav"
         onClick={() => setOpen((value) => !value)}
@@ -96,7 +92,7 @@ function MobileNav({ overlay }: { overlay: boolean }) {
       {open ? (
         <div
           id="mobile-nav"
-          className="fixed inset-0 z-40 flex flex-col bg-leather px-8 pt-24 lg:hidden"
+          className="fixed inset-0 z-40 flex flex-col bg-leather px-8 pt-24"
         >
           <button
             type="button"
@@ -108,12 +104,12 @@ function MobileNav({ overlay }: { overlay: boolean }) {
               ×
             </span>
           </button>
-          <nav className="flex flex-col gap-6" aria-label="Mobile">
+          <nav className="flex flex-col gap-6" aria-label="Menu">
             {mainNav.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="font-heading text-2xl tracking-[0.18em] uppercase text-parchment"
+                className="font-heading text-2xl leading-snug text-parchment"
               >
                 {item.label}
               </Link>
@@ -121,6 +117,6 @@ function MobileNav({ overlay }: { overlay: boolean }) {
           </nav>
         </div>
       ) : null}
-    </>
+    </div>
   );
 }

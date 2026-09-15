@@ -11,19 +11,20 @@ The visual system follows the supplied mobile mock: solid burgundy hero, cream b
 | `--ink` `#1a0d08` | Headings and body |
 | `--gold` `#e8dcc8` | Motto lines on burgundy |
 
-Fonts: Cinzel (headings, small-caps) and Source Serif 4 (body).
+Font: Libre Baskerville for headings and body (Baskerville as specified).
 
 ## Tone of voice
 
 - Formal, warm, short
-- Keep the welcome copy from the mock unchanged
+- Keep the supplied welcome and doctrine copy unchanged
 - Quote the KJV where Scripture is cited
 - Do not write as a megachurch or cathedral
-- Leadership is local brethren, not a branded pastor
+- Doctrine is Apostolic (one God revealed in Jesus Christ), practice is Open Brethren
 
 ## Layout
 
-- Home: full-viewport solid burgundy wordmark, then centered cream Welcome
+- Home: burgundy hero with the name, motto and verse centred, then centred cream Welcome
+- Desktop nav: open row, centred in the header (hamburger only below `md`)
 - Inner pages: solid burgundy title band, cream article
-- Top nav: Home, Visit, Gatherings, About, Contact
-- Footer: The Gospel, Safeguarding, Privacy, address, Matthew 18:20
+- Top nav: What we are, Services, Join us for fellowship, Our beginnings, Contact us
+- Footer: the same pages, plus Safeguarding, Privacy, address, Matthew 18.20 KJV

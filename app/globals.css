@@ -24,8 +24,8 @@
   --color-gold: var(--gold);
   --color-gold-deep: var(--gold-deep);
   --color-cream: var(--cream);
-  --font-heading: var(--font-cinzel);
-  --font-body: var(--font-source-serif);
+  --font-heading: var(--font-baskerville);
+  --font-body: var(--font-baskerville);
 }
 
 html {
@@ -35,7 +35,7 @@ html {
 body {
   background: var(--parchment);
   color: var(--ink);
-  font-family: var(--font-source-serif), "Times New Roman", serif;
+  font-family: var(--font-baskerville), Baskerville, "Times New Roman", serif;
 }
 
 .texture-leather {
@@ -58,13 +58,24 @@ body {
 
 .prose-church h2 {
   color: var(--ink);
-  font-family: var(--font-cinzel), serif;
+  font-family: var(--font-baskerville), Baskerville, serif;
   font-size: 1.35rem;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   margin-top: 2.4rem;
   margin-bottom: 0.75rem;
+}
+
+.prose-church h3 {
+  color: var(--ink);
+  font-family: var(--font-baskerville), Baskerville, serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .prose-church p {

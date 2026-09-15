@@ -7,7 +7,7 @@
 - [x] Header, footer, mobile nav
 - [x] Markdown content layer
 - [x] Home matching the supplied mock
-- [x] Visit, Gatherings, About, Gospel, Contact, Safeguarding, Privacy
+- [x] What we are, Services, Join us, Our beginnings, Contact, Safeguarding, Privacy
 - [x] Church JSON-LD
 - [x] Content loader tests
 - [x] Docs and progress notes
@@ -17,6 +17,6 @@
 - Street address and postcode
 - Telephone and email
 - Charity number
-- Exact meeting times
+- Zoom details for Thursday prayer
 - Safeguarding lead names
 - Photographs of the hall and people

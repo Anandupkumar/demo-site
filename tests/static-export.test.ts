@@ -5,10 +5,10 @@ import { describe, expect, it } from "vitest";
 const outDir = join(process.cwd(), "out");
 const requiredHtml = [
   "index.html",
-  "visit/index.html",
-  "gatherings/index.html",
-  "about/index.html",
-  "the-gospel/index.html",
+  "what-we-are/index.html",
+  "services/index.html",
+  "join-us/index.html",
+  "our-beginnings/index.html",
   "contact/index.html",
   "safeguarding/index.html",
   "privacy/index.html",

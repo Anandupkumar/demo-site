@@ -21,7 +21,7 @@ export function JsonLd({ site }: JsonLdProps) {
     },
     telephone: site.phone || undefined,
     email: site.email || undefined,
-    openingHours: "Su 10:30-19:30",
+    openingHours: ["Su 11:00-15:00", "Th 20:00-21:00"],
   };
 
   return (

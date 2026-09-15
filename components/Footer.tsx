@@ -25,10 +25,10 @@ export function Footer({ site }: FooterProps) {
         <div className="mx-auto mt-12 grid max-w-3xl gap-10 text-center sm:grid-cols-3 sm:text-left">
           <div>
             <p className="font-heading text-[0.68rem] tracking-[0.2em] uppercase text-gold">
-              Visit
+              The church
             </p>
             <ul className="mt-3 space-y-2">
-              {mainNav.slice(1, 3).map((item) => (
+              {mainNav.slice(0, 3).map((item) => (
                 <li key={item.href}>
                   <Link href={item.href} className="text-parchment/80 hover:text-gold">
                     {item.label}
@@ -39,7 +39,7 @@ export function Footer({ site }: FooterProps) {
           </div>
           <div>
             <p className="font-heading text-[0.68rem] tracking-[0.2em] uppercase text-gold">
-              About
+              More
             </p>
             <ul className="mt-3 space-y-2">
               {mainNav.slice(3).map((item) => (
@@ -49,11 +49,6 @@ export function Footer({ site }: FooterProps) {
                   </Link>
                 </li>
               ))}
-              <li>
-                <Link href="/the-gospel/" className="text-parchment/80 hover:text-gold">
-                  The Gospel
-                </Link>
-              </li>
             </ul>
           </div>
           <div>

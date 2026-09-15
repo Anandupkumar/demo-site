@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import { MarkdownPage } from "@/components/MarkdownPage";
 import { getPage } from "@/lib/content";
 
-const page = getPage("privacy");
+const page = getPage("what-we-are");
 
 export const metadata: Metadata = {
   title: page.title,
   description: page.description,
 };
 
-export default function PrivacyPage() {
-  return <MarkdownPage slug="privacy" />;
+export default function WhatWeArePage() {
+  return <MarkdownPage slug="what-we-are" />;
 }

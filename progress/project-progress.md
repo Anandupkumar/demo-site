@@ -30,3 +30,18 @@ Images used root paths (`/images/...`) which resolve to `github.io/images/...` i
 ## 9 September 2026 — Solid mock colours
 
 Restored the supplied mock palette: solid burgundy `#3d1b11` and cream `#f5f3e7`. Removed photographic backgrounds and image strips so the hero and welcome match the original design.
+
+## 15 September 2026 — Site copy and information architecture
+
+Replaced Visit / Gatherings / About / The Gospel with the supplied pages: What we are, Services, Join us for fellowship, Our beginnings, and Contact us.
+
+- Homepage: church name top-left at three-quarters width, Baskerville, menu icon top-right, Welcome centred
+- Welcome, services times, fellowship, and beginnings copy taken from the supplied text
+- Doctrine page states Open Brethren practice and Apostolic (not Nicene/Trinitarian) teaching
+- Meeting times: Sunday 11:00 Breaking of Bread, 12:00 Sunday School and Word, 14:00 Bible Teaching; Thursday 20:00 Zoom prayer
+
+## 15 September 2026 — Desktop navigation
+
+The header no longer uses a right-aligned hamburger on desktop. Main links sit in an open, centred row. The menu icon remains for small screens only.
+
+The homepage hero is now centred too (name, motto, Matthew 18.20 KJV), replacing the earlier left-aligned three-quarter-width block.

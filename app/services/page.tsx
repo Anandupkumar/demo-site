@@ -2,17 +2,18 @@ import type { Metadata } from "next";
 import { Container } from "@/components/Container";
 import { CtaButton } from "@/components/CtaButton";
 import { MarkdownBody } from "@/components/MarkdownBody";
+import { MeetingTimes } from "@/components/MeetingTimes";
 import { PageHero } from "@/components/PageHero";
 import { getPage, getSiteConfig } from "@/lib/content";
 
-const page = getPage("visit");
+const page = getPage("services");
 
 export const metadata: Metadata = {
   title: page.title,
   description: page.description,
 };
 
-export default function VisitPage() {
+export default function ServicesPage() {
   const site = getSiteConfig();
 
   return (
@@ -21,14 +22,12 @@ export default function VisitPage() {
       <section className="bg-parchment">
         <Container className="max-w-3xl py-16 sm:py-20">
           <MarkdownBody content={page.body} />
-          <div className="mt-12 flex flex-wrap gap-4">
-            <CtaButton href="/gatherings/">Gathering times</CtaButton>
-            <CtaButton href="/contact/">Contact us</CtaButton>
+          <div className="mt-12">
+            <MeetingTimes meetings={site.gatherings} />
           </div>
-          <p className="mt-10 text-sm text-ink-soft">
-            {site.location}
-            {site.timesNote ? ` — ${site.timesNote}` : ""}
-          </p>
+          <div className="mt-12">
+            <CtaButton href="/join-us/">Join us for fellowship</CtaButton>
+          </div>
         </Container>
       </section>
     </>

@@ -16,11 +16,20 @@ describe("site content", () => {
 
     expect(site.name).toBe("Manchester Apostolic Brethren Church");
     expect(site.motto).toMatch(/Gathered unto His Name/i);
-    expect(site.verseReference).toMatch(/Matthew 18:20/i);
+    expect(site.verseReference).toMatch(/Matthew 18\.20/i);
     expect(site.location).toMatch(/Atherton/);
     expect(site.confession).toMatch(/Jesus Christ is our God/);
     expect(site.welcome.length).toBeGreaterThan(0);
-    expect(site.gatherings.length).toBeGreaterThan(0);
+    expect(site.ministry).toMatch(/worship Him/);
+    expect(site.inclusion).toMatch(/non-denominational/i);
+    expect(site.acts242).toMatch(/apostles' doctrine/);
+    expect(site.sundayHighlight).toMatch(/11:00 AM/);
+    expect(site.gatherings.map((item) => item.name)).toEqual([
+      "Breaking of Bread",
+      "Sunday School and Word Ministry",
+      "Bible Teaching",
+      "Prayer Meeting",
+    ]);
   });
 
   it("rejects site markdown that is missing required fields", () => {
@@ -30,6 +39,16 @@ describe("site content", () => {
   });
 
   it("loads every required page", () => {
+    expect([...REQUIRED_PAGE_SLUGS]).toEqual([
+      "what-we-are",
+      "services",
+      "join-us",
+      "our-beginnings",
+      "contact",
+      "safeguarding",
+      "privacy",
+    ]);
+
     for (const slug of REQUIRED_PAGE_SLUGS) {
       const page = getPage(slug);
       expect(page.title.length).toBeGreaterThan(0);
