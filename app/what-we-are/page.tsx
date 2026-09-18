@@ -6,7 +6,7 @@ const page = getPage("what-we-are");
 
 export const metadata: Metadata = {
   title: page.title,
-  description: page.description,
+  description: [page.description, page.accent].filter(Boolean).join(" "),
 };
 
 export default function WhatWeArePage() {

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Container } from "@/components/Container";
 import { Ornament } from "@/components/Ornament";
 import type { SiteConfig } from "@/lib/content";
-import { footerNav, mainNav } from "@/lib/nav";
+import { footerNav } from "@/lib/nav";
 
 type FooterProps = {
   site: SiteConfig
@@ -11,56 +11,24 @@ type FooterProps = {
 export function Footer({ site }: FooterProps) {
   return (
     <footer className="bg-leather text-parchment">
-      <Container className="py-16">
-        <p className="text-center font-heading text-sm tracking-[0.2em] uppercase">
+      <Container className="py-16 text-center">
+        <p className="font-heading text-sm tracking-[0.2em] uppercase">
           {site.name}
         </p>
-        <p className="mt-3 text-center font-heading text-[0.68rem] tracking-[0.28em] uppercase text-gold">
+        <p className="mt-3 font-heading text-[0.68rem] tracking-[0.28em] uppercase text-gold">
           {site.motto}
         </p>
         <div className="mt-6">
           <Ornament />
         </div>
 
-        <div className="mx-auto mt-12 grid max-w-3xl gap-10 text-center sm:grid-cols-3 sm:text-left">
-          <div>
-            <p className="font-heading text-[0.68rem] tracking-[0.2em] uppercase text-gold">
-              The church
-            </p>
-            <ul className="mt-3 space-y-2">
-              {mainNav.slice(0, 3).map((item) => (
-                <li key={item.href}>
-                  <Link href={item.href} className="text-parchment/80 hover:text-gold">
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <p className="font-heading text-[0.68rem] tracking-[0.2em] uppercase text-gold">
-              More
-            </p>
-            <ul className="mt-3 space-y-2">
-              {mainNav.slice(3).map((item) => (
-                <li key={item.href}>
-                  <Link href={item.href} className="text-parchment/80 hover:text-gold">
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <p className="font-heading text-[0.68rem] tracking-[0.2em] uppercase text-gold">
-              Find us
-            </p>
-            <p className="mt-3 text-sm text-parchment/80">{site.address}</p>
-          </div>
-        </div>
+        <p className="mt-12 font-heading text-[0.68rem] tracking-[0.2em] uppercase text-gold">
+          Find us
+        </p>
+        <p className="mt-3 text-sm text-parchment/80">{site.address}</p>
 
-        <p className="mt-12 text-center text-parchment/80 italic">{site.verse}</p>
-        <p className="mt-3 text-center font-heading text-[0.65rem] tracking-[0.22em] uppercase text-gold">
+        <p className="mt-12 text-parchment/80 italic">{site.verse}</p>
+        <p className="mt-3 font-heading text-[0.65rem] tracking-[0.22em] uppercase text-gold">
           {site.verseReference}
         </p>
 
@@ -77,11 +45,11 @@ export function Footer({ site }: FooterProps) {
         </div>
 
         {site.charityNumber ? (
-          <p className="mt-8 text-center text-sm text-parchment/60">
+          <p className="mt-8 text-sm text-parchment/60">
             Registered charity number: {site.charityNumber}
           </p>
         ) : null}
-        <p className="mt-6 text-center text-xs text-parchment/50">
+        <p className="mt-6 text-xs text-parchment/50">
           © {new Date().getFullYear()} {site.name}
         </p>
       </Container>

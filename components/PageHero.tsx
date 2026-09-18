@@ -4,9 +4,10 @@ import { Ornament } from "@/components/Ornament";
 type PageHeroProps = {
   title: string
   description?: string
+  accent?: string
 };
 
-export function PageHero({ title, description }: PageHeroProps) {
+export function PageHero({ title, description, accent }: PageHeroProps) {
   return (
     <section className="bg-leather text-parchment">
       <Container className="py-16 sm:py-20">
@@ -17,8 +18,19 @@ export function PageHero({ title, description }: PageHeroProps) {
           <Ornament />
         </div>
         {description ? (
-          <p className="mx-auto mt-6 max-w-2xl text-center leading-relaxed text-parchment/88">
+          <p
+            className={
+              accent
+                ? "mx-auto mt-8 text-center font-heading text-xl leading-snug text-parchment sm:whitespace-nowrap sm:text-2xl"
+                : "mx-auto mt-6 max-w-2xl text-center leading-relaxed text-parchment/88"
+            }
+          >
             {description}
+          </p>
+        ) : null}
+        {accent ? (
+          <p className="mx-auto mt-4 text-center font-heading text-2xl leading-snug text-gold sm:text-3xl">
+            {accent}
           </p>
         ) : null}
       </Container>

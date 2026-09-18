@@ -43,6 +43,8 @@ export type PageDoc = {
   slug: string
   title: string
   description: string
+  accent: string
+  lead: string
   body: string
 };
 
@@ -161,6 +163,8 @@ export function parsePageMarkdown(slug: string, raw: string): PageDoc {
     slug,
     title,
     description: asString(data.description),
+    accent: asString(data.accent),
+    lead: asString(data.lead),
     body,
   };
 }

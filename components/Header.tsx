@@ -23,46 +23,23 @@ export function Header({ name }: HeaderProps) {
     >
       <div className="relative mx-auto min-h-14 max-w-6xl px-6 py-4 sm:px-8">
         {/* Remount on route change so the drawer closes without setState-in-effect. */}
-        <MobileNav key={pathname} overlay={overlay} />
+        <MenuNav key={pathname} overlay={overlay} />
 
         {/* The home hero already carries the name as the h1, so only inner pages repeat it. */}
         {overlay ? null : (
           <Link
             href="/"
-            className="block max-w-[calc(100%-3.5rem)] py-1 font-heading text-[0.95rem] leading-snug text-parchment md:max-w-none md:text-center md:text-xl"
+            className="block max-w-[calc(100%-3.5rem)] py-1 font-heading text-[0.95rem] leading-snug text-parchment md:text-xl"
           >
             {name}
           </Link>
         )}
-
-        <nav
-          className={`hidden flex-wrap items-center justify-center gap-x-5 gap-y-2 md:flex ${
-            overlay ? "" : "md:mt-3"
-          }`}
-          aria-label="Main"
-        >
-          {mainNav.map((item) => {
-            const current = pathname === item.href || pathname === item.href.replace(/\/$/, "");
-            return (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`whitespace-nowrap font-heading text-[0.7rem] tracking-[0.12em] uppercase hover:text-gold ${
-                  current ? "text-gold" : "text-parchment/90"
-                }`}
-                aria-current={current ? "page" : undefined}
-              >
-                {item.label}
-              </Link>
-            );
-          })}
-        </nav>
       </div>
     </header>
   );
 }
 
-function MobileNav({ overlay }: Readonly<{ overlay: boolean }>) {
+function MenuNav({ overlay }: Readonly<{ overlay: boolean }>) {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -73,12 +50,12 @@ function MobileNav({ overlay }: Readonly<{ overlay: boolean }>) {
   }, [open]);
 
   return (
-    <div className="absolute right-4 top-3 sm:right-6 md:hidden">
+    <div className="absolute right-4 top-3 sm:right-6">
       <button
         type="button"
         className={`p-2 ${overlay ? "text-white" : "text-parchment"}`}
         aria-expanded={open}
-        aria-controls="mobile-nav"
+        aria-controls="site-nav"
         onClick={() => setOpen((value) => !value)}
       >
         <span className="sr-only">{open ? "Close menu" : "Open menu"}</span>
@@ -91,7 +68,7 @@ function MobileNav({ overlay }: Readonly<{ overlay: boolean }>) {
 
       {open ? (
         <div
-          id="mobile-nav"
+          id="site-nav"
           className="fixed inset-0 z-40 flex flex-col bg-leather px-8 pt-24"
         >
           <button
@@ -104,7 +81,7 @@ function MobileNav({ overlay }: Readonly<{ overlay: boolean }>) {
               ×
             </span>
           </button>
-          <nav className="flex flex-col gap-6" aria-label="Menu">
+          <nav className="flex flex-col gap-6" aria-label="Main">
             {mainNav.map((item) => (
               <Link
                 key={item.href}

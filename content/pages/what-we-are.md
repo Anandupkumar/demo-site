@@ -1,9 +1,9 @@
 ---
 title: What we are
-description: Open Brethren in practice, Apostolic in doctrine — One Lord, one faith, one baptism.
+description: Open Brethren in practice, Apostolic in doctrine.
+accent: One Lord. One Faith. One Baptism.
+lead: We use only the King James Version for study and preaching. All Scripture quotations are KJV.
 ---
-
-_We use only the King James Version for study and preaching. All Scripture quotations are KJV._
 
 We are a local, independent Christian church that gathers in the Name of the Lord Jesus Christ.
 

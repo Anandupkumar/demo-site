@@ -12,9 +12,18 @@ export function MarkdownPage({ slug }: MarkdownPageProps) {
 
   return (
     <>
-      <PageHero title={page.title} description={page.description} />
+      <PageHero
+        title={page.title}
+        description={page.description}
+        accent={page.accent}
+      />
       <section className="bg-parchment">
         <Container className="max-w-3xl py-16 sm:py-20">
+          {page.lead ? (
+            <p className="mx-auto mb-12 max-w-xl text-center font-heading text-lg italic leading-[1.75] text-ink sm:text-xl">
+              {page.lead}
+            </p>
+          ) : null}
           <MarkdownBody content={page.body} />
         </Container>
       </section>

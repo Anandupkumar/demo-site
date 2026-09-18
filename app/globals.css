@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --leather: #3d1b11;
-  --leather-mid: #4a2015;
-  --leather-light: #5c2a1c;
-  --parchment: #f5f3e7;
-  --parchment-deep: #ebe6d6;
+  --leather: #542b1c;
+  --leather-mid: #663625;
+  --leather-light: #7a4532;
+  --parchment: #f4ead8;
+  --parchment-deep: #ebe3d0;
   --ink: #1a0d08;
   --ink-soft: #3d2a22;
-  --gold: #e8dcc8;
-  --gold-deep: #4a2015;
-  --cream: #fcf9f2;
+  --gold: #c9a06a;
+  --gold-deep: #8a5a2e;
+  --cream: #fbf7ea;
 }
 
 @theme inline {
@@ -30,6 +30,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 90%;
 }
 
 body {
@@ -38,8 +39,13 @@ body {
   font-family: var(--font-baskerville), Baskerville, "Times New Roman", serif;
 }
 
-.texture-leather {
+.texture-leather,
+.bg-leather {
   background-color: var(--leather);
+  background-image: url("/leather.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .texture-parchment {
