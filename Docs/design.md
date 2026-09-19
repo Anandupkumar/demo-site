@@ -28,3 +28,4 @@ Font: Libre Baskerville for headings and body (Baskerville as specified).
 - Inner pages: solid burgundy title band, cream article
 - Top nav: What we are, Services, Join us for fellowship, Our beginnings, Contact us
 - Footer: the same pages, plus Safeguarding, Privacy, address, Matthew 18.20 KJV
+
