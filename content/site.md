@@ -3,7 +3,7 @@ name: Manchester Apostolic Brethren Church
 shortName: MABC
 motto: Gathered unto His Name
 verse: For where two or three are gathered together in my name, there am I in the midst of them.
-verseReference: Matthew 18.20 KJV
+verseReference: Matthew 18:20 KJV
 location: Atherton, Manchester
 town: Atherton
 city: Manchester
@@ -13,11 +13,12 @@ phone: ""
 email: ""
 charityNumber: ""
 mapQuery: Atherton, Manchester, United Kingdom
-confession: Jesus Christ is our God, our Saviour, and our Life.
+confession: Jesus Christ is our God, our Saviour, and our life.
 hope: Because of Him, we are a people of Hope.
 timesNote: ""
 welcome:
-  - We are a local, independent Christian church in the heart of Atherton, Manchester. We are brothers and sisters in Christ, gathering in the Name of the Lord Jesus Christ.
+  - We are a local, independent Christian church in the heart of Atherton, Manchester.
+  - We are brothers and sisters in Christ, gathering in the Name of the Lord Jesus Christ.
 ministry: We gather to worship Him, grow in His Word, pray together, and serve Atherton and beyond in His Name.
 inclusion: All are welcome here — people of every colour, race and background. We are non-denominational. Christ is our Head.
 acts242: And they continued stedfastly in the apostles' doctrine and fellowship, and in breaking of bread, and in prayers.

@@ -5,11 +5,11 @@ type ScriptureProps = {
 };
 
 export function Scripture({ text, reference, tone = "dark" }: ScriptureProps) {
-  const color = tone === "light" ? "text-parchment/90" : "text-ink";
+  const color = tone === "light" ? "text-ivory/90" : "text-ink";
   const refColor = tone === "light" ? "text-gold" : "text-gold-deep";
 
   return (
-    <figure className={`max-w-2xl ${color}`}>
+    <figure className={`mx-auto max-w-2xl text-center ${color}`}>
       <blockquote className="font-body text-lg sm:text-xl italic leading-relaxed">
         {text}
       </blockquote>

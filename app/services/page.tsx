@@ -20,7 +20,7 @@ export default function ServicesPage() {
     <>
       <PageHero title={page.title} description={page.description} />
       <section className="bg-parchment">
-        <Container className="max-w-3xl py-16 sm:py-20">
+        <Container className="max-w-3xl py-16 sm:py-20 text-center">
           <MarkdownBody content={page.body} />
           <div className="mt-12">
             <MeetingTimes meetings={site.gatherings} />

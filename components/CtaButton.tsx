@@ -9,10 +9,10 @@ type CtaButtonProps = {
 
 export function CtaButton({ href, children, variant = "dark" }: CtaButtonProps) {
   const styles = {
-    dark: "bg-leather text-parchment hover:bg-leather-mid",
+    dark: "bg-leather text-ivory hover:bg-leather-mid",
     light: "bg-parchment text-leather hover:bg-cream",
     outline:
-      "border border-gold/70 text-parchment hover:bg-white/10",
+      "border border-gold/70 text-ivory hover:bg-white/10",
   }[variant];
 
   return (

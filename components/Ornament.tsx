@@ -3,14 +3,11 @@ type OrnamentProps = {
 };
 
 export function Ornament({ tone = "gold" }: OrnamentProps) {
-  const line = tone === "gold" ? "bg-gold/55" : "bg-leather/25";
-  const mark = tone === "gold" ? "text-gold" : "text-leather-light";
+  const line = tone === "gold" ? "bg-gold" : "bg-leather/30";
 
   return (
-    <div className="flex items-center justify-center gap-3" aria-hidden="true">
-      <span className={`h-px w-10 sm:w-16 ${line}`} />
-      <span className={`${mark} text-xs`}>+</span>
-      <span className={`h-px w-10 sm:w-16 ${line}`} />
+    <div className="flex justify-center" aria-hidden="true">
+      <span className={`block h-px w-16 ${line}`} />
     </div>
   );
 }

@@ -19,7 +19,7 @@ export default function ContactPage() {
     <>
       <PageHero title={page.title} description={page.description} />
       <section className="bg-parchment">
-        <Container className="grid gap-12 py-16 sm:py-20 lg:grid-cols-2">
+        <Container className="max-w-3xl py-16 sm:py-20 text-center">
           <div>
             <MarkdownBody content={page.body} />
             <dl className="mt-8 space-y-4 text-ink-soft">
@@ -74,11 +74,11 @@ export default function ContactPage() {
               />
             </div>
           </div>
-          <div>
-            <h2 className="font-heading text-2xl tracking-[0.12em] uppercase text-ink">
+          <div className="mt-16">
+            <h2 className="font-heading text-2xl font-normal leading-[1.15] text-ink">
               Write to us
             </h2>
-            <div className="mt-6">
+            <div className="mx-auto mt-6 max-w-xl">
               <ContactForm email={site.email} />
             </div>
           </div>

@@ -13,7 +13,7 @@ export function ContactForm({ email }: ContactFormProps) {
 
   if (!email) {
     return (
-      <p className="border border-leather/15 bg-cream/60 px-6 py-5 text-ink-soft">
+      <p className="border border-leather/15 bg-cream/60 px-6 py-5 text-center text-ink-soft">
         A contact email has not been published yet. Please visit us on the
         Lord&apos;s Day, or speak with a brother at the door.
       </p>
@@ -30,7 +30,7 @@ export function ContactForm({ email }: ContactFormProps) {
   }
 
   return (
-    <form onSubmit={onSubmit} className="grid gap-5">
+    <form onSubmit={onSubmit} className="grid gap-5 text-center">
       <label className="grid gap-2 text-sm text-ink-soft">
         Your name
         <input
@@ -66,7 +66,7 @@ export function ContactForm({ email }: ContactFormProps) {
       </label>
       <button
         type="submit"
-        className="justify-self-start bg-leather px-7 py-3 font-heading text-[0.72rem] tracking-[0.22em] uppercase text-parchment hover:bg-leather-mid"
+        className="justify-self-center bg-leather px-7 py-3 font-heading text-[0.72rem] tracking-[0.22em] uppercase text-ivory hover:bg-leather-mid"
       >
         Send message
       </button>

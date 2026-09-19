@@ -31,7 +31,9 @@ _For in him dwelleth all the fulness of the Godhead bodily. Colossians 2:9_
 
 **We keep no traditions of men.** _Matthew 15:9_
 
-## Apostolic in doctrine — one Lord, one faith, one baptism
+## Apostolic in doctrine
+
+one Lord. one faith. one baptism
 
 _Ephesians 4:5_
 

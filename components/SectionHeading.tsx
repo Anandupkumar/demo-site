@@ -21,7 +21,7 @@ export function SectionHeading({
           {eyebrow}
         </p>
       ) : null}
-      <h2 className="font-heading text-3xl sm:text-4xl tracking-[0.14em] uppercase text-ink">
+      <h2 className="font-heading text-3xl font-normal leading-[1.15] text-ink sm:text-4xl">
         {children}
       </h2>
       <Ornament tone="leather" />

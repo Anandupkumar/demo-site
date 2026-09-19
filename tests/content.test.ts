@@ -16,7 +16,7 @@ describe("site content", () => {
 
     expect(site.name).toBe("Manchester Apostolic Brethren Church");
     expect(site.motto).toMatch(/Gathered unto His Name/i);
-    expect(site.verseReference).toMatch(/Matthew 18\.20/i);
+    expect(site.verseReference).toMatch(/Matthew 18:20/i);
     expect(site.location).toMatch(/Atherton/);
     expect(site.confession).toMatch(/Jesus Christ is our God/);
     expect(site.welcome.length).toBeGreaterThan(0);
