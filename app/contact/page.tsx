@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
+  const page = getPage("contact");
   const site = getSiteConfig();
 
   return (

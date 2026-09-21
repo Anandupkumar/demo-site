@@ -7,7 +7,7 @@ lead: We use only the King James Version for study and preaching. All Scripture 
 
 We are a local, independent Christian church that gathers in the Name of the Lord Jesus Christ.
 
-If you want to know what we look like on a Sunday, we are like Open Brethren in practice and in church order. But unlike most Brethren assemblies, we are **not Nicene creedal** (Trinity — God in three persons). We hold to the **Apostolic doctrine** — One God who has fully revealed Himself in Jesus Christ; the Father, Son and Holy Ghost is One God and His Name is Jesus Christ. _Matthew 28:19; Acts 2:38_
+If you want to know what we look like on a Sunday, we are like Open Brethren in practice and in church order. But unlike most Brethren assemblies, we are **not Nicene creedal**: we do not hold to the Trinity doctrine formulated at the Council of Nicaea in AD 325 (One God existing eternally in three co-equal divine persons). We hold to the **Apostolic doctrine**: One God who has fully revealed Himself in Jesus Christ; the Father, Son and Holy Ghost is One God and His Name is Jesus Christ. _Matthew 28:19; Acts 2:38_
 
 _For in him dwelleth all the fulness of the Godhead bodily. Colossians 2:9_
 
@@ -23,11 +23,11 @@ _For in him dwelleth all the fulness of the Godhead bodily. Colossians 2:9_
 
 **Women do not teach** in the church. _1 Timothy 2:12_
 
-**No formal membership roll.** We receive believers into fellowship.
+**No formal membership roll.**
 
-**Weekly breaking of bread.** _Acts 2:42_
+**Weekly breaking of bread.** _Acts 20:7_
 
-**Open Table** to all saved and baptized believers in fellowship with a local church. No letter required, but _let a man examine himself. 1 Corinthians 11:28_
+**Open Table** at the discretion of the elders, to all visiting saved believers. No letter required, but _let a man examine himself. 1 Corinthians 11:28_
 
 **We keep no traditions of men.** _Matthew 15:9_
 
@@ -45,15 +45,17 @@ _One God and Father of all, who is above all, and through all, and in you all. E
 
 The One God and Father of all is the Lord Jesus Christ. _He is the true God, and eternal life. 1 John 5:20_
 
-Jesus Christ did not begin at Bethlehem. He, being in the form of the invisible God, with all the fulness of the Godhead dwelling in Him, is eternal. When the fulness of the time was come, He took upon Him the form of a servant. He was made flesh, begotten and sent as the Son of God, made in the likeness of men, and was obedient unto God, the invisible Spirit that dwelt in Him.
+Jesus Christ did not begin at Bethlehem. He, being in the form of the invisible God, with all the fullness of the Godhead dwelling in Him, is Eternal. When the fullness of the time had come, He was made flesh in the likeness of men, taking upon Himself the form of a servant. Being begotten as the Son of God and sent, He was obedient unto God, the invisible Spirit that dwelt in Him.
 
 _Philippians 2:6-8; Colossians 2:9; Galatians 4:4; Luke 1:35; John 4:24_
 
 **Our worship is to the Lord Jesus Christ.**
 
-_No man cometh unto the Father, but by me. John 14:6_ — There is no access to God outside of Jesus Christ. All access to God is given in the man in whom God the Father Himself is manifested.
+_No man cometh unto the Father, but by me. John 14:6_
 
-To praise God through Jesus is to praise the Name of Jesus, and God in Him receives it. _Hebrews 13:15._ All worship that is to the glory of the Father must bow at the Name of Jesus and be directed to Jesus Himself. Worship directed to the Father, even as through Jesus, is not to the glory of God the Father; therefore, God does not receive it. _Philippians 2:9-11_
+There is no access to God outside of Jesus Christ. All access to God is given in the man in whom God the Father Himself is manifested.
+
+To praise God through Jesus is to praise the Name of Jesus, and God in Him receives it. _Hebrews 13:15._ All worship that is to the glory of the Father must bow at the Name of Jesus and be directed to Jesus Himself. Worship directed to the Father, even through Jesus, is not to the glory of God the Father; therefore, God does not receive it. _Philippians 2:9-11_
 
 _He that honoureth not the Son honoureth not the Father which hath sent him. John 5:23_
 
@@ -63,8 +65,12 @@ Salvation by grace through faith, not of works, through the Death, Burial and Re
 
 ### One baptism
 
-_Baptized by one Spirit into one Body, the Body of Christ. 1 Corinthians 12:13. And because ye are sons, God hath sent forth the Spirit of his Son into your hearts, crying, Abba, Father. Galatians 4:6._ The same Spirit beareth witness, sealeth us, and leadeth us into all truth. _Romans 8:16; Ephesians 4:30; John 16:13_
+_Baptized by one Spirit into one Body, the Body of Christ. 1 Corinthians 12:13_
 
-Water baptism is not a means of salvation, but is for public testimony and identification with Christ, **in the Holy Name of Jesus Christ** — the Name revealed to the Apostles as the Name of the Father, and of the Son, and of the Holy Ghost, as preached and practiced by the Apostles. _Acts 2:38; Acts 8:16; Acts 10:48; Acts 19:5; Acts 22:16; Romans 6:3_
+_And because ye are sons, God hath sent forth the Spirit of his Son into your hearts, crying, Abba, Father. Galatians 4:6_
+
+The same Spirit beareth witness, sealeth us, and leadeth us into all truth. _Romans 8:16; Ephesians 4:30; John 16:13_
+
+Water baptism is not a means of salvation, but is for public testimony and identification with Christ, **in the Holy Name of Jesus Christ** — the Name revealed to the Apostles as the Name of the Father, and of the Son, and of the Holy Ghost, preached and practiced by the Apostles. _Acts 2:38; Acts 8:16; Acts 10:48; Acts 19:5; Acts 22:16; Romans 6:3_
 
 _And they continued stedfastly in the apostles' doctrine and fellowship, and in breaking of bread, and in prayers. Acts 2:42_

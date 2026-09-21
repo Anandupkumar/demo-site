@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { FormEvent, useState } from "react";
 
 type ContactFormProps = {
@@ -9,7 +10,9 @@ type ContactFormProps = {
 export function ContactForm({ email }: ContactFormProps) {
   const [name, setName] = useState("");
   const [from, setFrom] = useState("");
+  const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
+  const [consent, setConsent] = useState(false);
 
   if (!email) {
     return (
@@ -24,7 +27,7 @@ export function ContactForm({ email }: ContactFormProps) {
     event.preventDefault();
     const subject = encodeURIComponent(`Website enquiry from ${name || "a visitor"}`);
     const body = encodeURIComponent(
-      `${message}\n\n— ${name}${from ? ` (${from})` : ""}`,
+      `${message}\n\n— ${name}${from ? ` (${from})` : ""}${phone ? `\nPhone: ${phone}` : ""}`,
     );
     window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
   }
@@ -32,7 +35,7 @@ export function ContactForm({ email }: ContactFormProps) {
   return (
     <form onSubmit={onSubmit} className="grid gap-5 text-center">
       <label className="grid gap-2 text-sm text-ink-soft">
-        Your name
+        Name
         <input
           type="text"
           name="name"
@@ -43,7 +46,7 @@ export function ContactForm({ email }: ContactFormProps) {
         />
       </label>
       <label className="grid gap-2 text-sm text-ink-soft">
-        Your email
+        Email
         <input
           type="email"
           name="email"
@@ -51,6 +54,16 @@ export function ContactForm({ email }: ContactFormProps) {
           onChange={(event) => setFrom(event.target.value)}
           className="border border-leather/20 bg-cream px-4 py-3 text-ink outline-none focus:border-gold-deep"
           required
+        />
+      </label>
+      <label className="grid gap-2 text-sm text-ink-soft">
+        Phone
+        <input
+          type="tel"
+          name="phone"
+          value={phone}
+          onChange={(event) => setPhone(event.target.value)}
+          className="border border-leather/20 bg-cream px-4 py-3 text-ink outline-none focus:border-gold-deep"
         />
       </label>
       <label className="grid gap-2 text-sm text-ink-soft">
@@ -63,6 +76,24 @@ export function ContactForm({ email }: ContactFormProps) {
           className="border border-leather/20 bg-cream px-4 py-3 text-ink outline-none focus:border-gold-deep"
           required
         />
+      </label>
+      <label className="flex items-start gap-3 text-left text-sm leading-relaxed text-ink-soft">
+        <input
+          type="checkbox"
+          name="consent"
+          checked={consent}
+          onChange={(event) => setConsent(event.target.checked)}
+          className="mt-1 shrink-0"
+          required
+        />
+        <span>
+          I agree to Manchester Apostolic Brethren Church storing my contact
+          details to respond to my inquiry in line with the{" "}
+          <Link href="/privacy/" className="underline underline-offset-4">
+            Privacy Policy
+          </Link>
+          .
+        </span>
       </label>
       <button
         type="submit"

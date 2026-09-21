@@ -8,5 +8,5 @@ export const mainNav = [
 
 export const footerNav = [
   { href: "/safeguarding/", label: "Safeguarding" },
-  { href: "/privacy/", label: "Privacy" },
+  { href: "/privacy/", label: "Privacy Policy" },
 ] as const;

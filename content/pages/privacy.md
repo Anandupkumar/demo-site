@@ -1,28 +1,55 @@
 ---
-title: Privacy
-description: How Manchester Apostolic Brethren Church handles personal information.
+title: Privacy Policy
+description: How Manchester Apostolic Brethren Church handles personal data under UK GDPR.
 ---
 
-This is a static website. We do not run user accounts, and we do not use advertising trackers.
+Manchester Apostolic Brethren Church is committed to protecting your privacy and handling your personal data with care, respect, and in full compliance with UK data protection law, including the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.
 
-## What we collect
+## 1. What Information We Collect
 
-If you send a message through the contact form, your browser opens your own email application. The message goes to the assembly contact address when that address has been set. We do not store form submissions on this website.
+We collect personal information that you voluntarily provide to us when you interact with our church. This may include your name, email address, phone number, home address, and details relating to your involvement in church life. We also keep secure records of financial donations for accounting and Gift Aid purposes where applicable.
 
-If we later add a third-party form service, that service's privacy notice will be linked here.
+We may also collect basic technical data when you visit our website, such as your IP address and browser type, to help us improve our website.
 
-## Hosting
+## 2. How We Use Your Information
 
-The site may be hosted on a static host such as Netlify, GitHub Pages, or Cloudflare Pages. Those providers may keep standard server logs (for example IP address and pages requested) according to their own policies.
+We only use your data to carry out the legitimate activities of Manchester Apostolic Brethren Church. This includes:
 
-## Cookies
+- Sending church news, updates, and service information
+- Managing event registrations and attendance
+- Organising our children's, youth, and community ministries safely
+- Processing voluntary offering, and free will Gifts and Gift Aid claims
+- Fulfilling our legal and charitable obligations
 
-This site does not set analytics or marketing cookies. The host may set a strictly necessary cookie for security or traffic management.
+We will never use your data for purposes unrelated to the life and ministry of the church.
 
-## Your rights
+## 3. Sharing Your Data
 
-If you have written to us, you may ask what personal information we hold and ask us to correct or delete it. Use the [contact page](/contact/).
+We will never sell your personal data or share it with outside companies for marketing purposes.
 
-## Changes
+Your data is only accessible to authorised church leaders and administrators who need it to fulfil their ministry roles. Where required by law, we may share information with relevant authorities or with our trusted service providers such as Thirtyone:eight for safeguarding or HMRC for Gift Aid, always under strict confidentiality.
 
-We will update this page if the way the site works changes — for example if a newsletter or blog comments are added later.
+## 4. How We Store and Protect Your Data
+
+Your information is stored securely and protected using appropriate technical and organisational measures. We retain your personal data only for as long as necessary to fulfil the purposes for which it was collected or as required by law.
+
+## 5. Your Rights
+
+Under UK data protection law, you have the right to:
+
+- Access the personal information we hold about you
+- Ask us to correct any inaccurate information
+- Ask us to delete your information from our systems
+- Object to or restrict how we use your data
+- Withdraw your consent at any time where we rely on consent
+
+To exercise any of these rights, please contact us at: [info@manchesterapostolicbrethrenchurch.org](mailto:info@manchesterapostolicbrethrenchurch.org)
+
+## 6. Contact Us
+
+If you have any questions or concerns about this Privacy Policy or how we handle your data, please contact:
+
+Manchester Apostolic Brethren Church  
+Email: [info@manchesterapostolicbrethrenchurch.org](mailto:info@manchesterapostolicbrethrenchurch.org)
+
+You also have the right to lodge a complaint with the Information Commissioner's Office (ICO) at [http://www.ico.org.uk](http://www.ico.org.uk) if you feel your data has not been handled appropriately.

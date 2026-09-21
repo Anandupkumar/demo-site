@@ -1,43 +1,41 @@
 ---
 title: Safeguarding
-description: Our commitment to the safety of children and adults who may be at risk.
+description: Our commitment to a safe, welcoming, and secure environment for everyone.
 ---
 
-We take safeguarding seriously. Everyone who worships with us, visits us, or serves among us should be safe.
+At Manchester Apostolic Brethren Church, we are committed to creating a safe, welcoming, and secure environment for everyone.
 
-This page is a public statement. A full written policy should be adopted by the assembly and kept with those responsible for oversight. Replace the placeholders below with the names and contacts of your designated people.
+Safeguarding is everyone’s responsibility and we are dedicated to protecting children, young people, and vulnerable adults from harm.
 
-## Our commitment
+If someone is in immediate danger or at risk, please call the Emergency Services on **999** straight away.
 
-We are committed to:
+## Our Policy & Oversight
 
-- Protecting children and adults who may be at risk
-- Responding promptly and properly to concerns
-- Working with statutory agencies when required
-- Reviewing our practice
+As an independent church, we maintain robust safeguarding policies and procedures. We work in close partnership with [Thirtyone:eight](https://thirtyoneeight.org/), the UK's leading independent Christian safeguarding charity, to ensure our practices meet the highest national standards.
 
-## Designated person
+Every leader, volunteer, and team member who works with children or vulnerable adults undergoes a strict safer recruitment process. This includes:
 
-**Safeguarding lead:** [Name to be confirmed]  
-**Deputy:** [Name to be confirmed]  
-**Contact:** use the [contact page](/contact/), marking your message as a safeguarding matter
+- Standard identity and eligibility checks
+- Professional and character references
+- An Enhanced DBS (Disclosure and Barring Service) check
 
-If someone is in immediate danger, call **999**.
+Our safeguarding policy is reviewed annually and is available on request.
 
-## If you have a concern
+## Raise a Concern
 
-If you are worried about a child or an adult connected with the assembly:
+If you are concerned about the welfare of a child or an adult, or if you have concerns regarding the conduct of a church volunteer or leader, please contact our safeguarding team immediately:
 
-1. If it is an emergency, contact the police.
-2. Otherwise, speak to the safeguarding lead, or write through the contact page.
-3. You may also contact the local authority or, for children in England, the NSPCC on **0808 800 5000**.
+**Safeguarding Coordinator:** Colein Wilfred  
+**Email:** [info@manchesterapostolicbrethrenchurch.org](mailto:info@manchesterapostolicbrethrenchurch.org)
 
-Do not investigate on your own.
+Your report will be handled with the utmost confidentiality, discretion, and care. We will listen, take your concern seriously, and act appropriately.
 
-## Thirtyone:eight and statutory guidance
+## External Support & Local Contacts
 
-Many UK churches take advice from [thirtyone:eight](https://thirtyoneeight.org/) and follow the relevant government guidance for faith organisations. We intend to work within that framework.
+If you would prefer to speak to someone outside our church team, or require independent advice, you can contact the following organisations directly:
 
-## Charity reporting
-
-If the assembly is a registered charity, serious incidents must be reported to the Charity Commission as required. The charity number will appear in the site footer once it is confirmed.
+- **Thirtyone:eight Helpline** (Independent Christian Safeguarding Advice): [0303 003 1111](tel:03030031111)
+- **Manchester Multi-Agency Safeguarding Hub (MASH)** — For concerns about a child: [0161 234 5001](tel:01612345001)
+- **Manchester Adult Social Care** — For concerns about a vulnerable adult: [0161 234 5001](tel:01612345001)
+- **NSPCC Helpline:** [0808 800 5000](tel:08088005000)
+- **Childline** (for children and young people): [0800 1111](tel:08001111)

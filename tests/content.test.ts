@@ -27,7 +27,6 @@ describe("site content", () => {
     expect(site.gatherings.map((item) => item.name)).toEqual([
       "Breaking of Bread",
       "Sunday School and Word Ministry",
-      "Bible Teaching",
       "Prayer Meeting",
     ]);
   });

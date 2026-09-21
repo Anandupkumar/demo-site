@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 };
 
 export default function ServicesPage() {
+  const doc = getPage("services");
   const site = getSiteConfig();
 
   return (
@@ -21,7 +22,7 @@ export default function ServicesPage() {
       <PageHero title={page.title} description={page.description} />
       <section className="bg-parchment">
         <Container className="max-w-3xl py-16 sm:py-20 text-center">
-          <MarkdownBody content={page.body} />
+          <MarkdownBody content={doc.body} />
           <div className="mt-12">
             <MeetingTimes meetings={site.gatherings} />
           </div>

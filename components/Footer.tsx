@@ -50,7 +50,12 @@ export function Footer({ site }: FooterProps) {
           </p>
         ) : null}
         <p className="mt-6 text-xs text-ivory/50">
-          © {new Date().getFullYear()} {site.name}
+          {`© ${new Date().getFullYear()} ${site.name}. All rights reserved.`}
+        </p>
+        <p className="mx-auto mt-4 max-w-xl text-xs leading-relaxed text-ivory/50">
+          Manchester Apostolic Brethren Church is an independent, non-profit
+          Christian faith organisation operating as an unregistered small charity
+          in England and Wales.
         </p>
       </Container>
     </footer>

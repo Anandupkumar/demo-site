@@ -10,10 +10,10 @@ city: Manchester
 address: Atherton, Greater Manchester
 postcode: ""
 phone: ""
-email: ""
+email: info@manchesterapostolicbrethrenchurch.org
 charityNumber: ""
 mapQuery: Atherton, Manchester, United Kingdom
-confession: Jesus Christ is our God, our Saviour, and our life.
+confession: Jesus Christ is our God, our Saviour, and our Life.
 hope: Because of Him, we are a people of Hope.
 timesNote: ""
 welcome:
@@ -34,10 +34,6 @@ gatherings:
     day: Sunday
     time: 12:00 PM
     description: Ministry of the Word with the children and the church.
-  - name: Bible Teaching
-    day: Sunday
-    time: 2:00 PM
-    description: Teaching from the Holy Scriptures.
   - name: Prayer Meeting
     day: Thursday
     time: 8:00 PM

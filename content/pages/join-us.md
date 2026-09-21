@@ -3,6 +3,8 @@ title: Join us for fellowship
 description: For those newly believing, and for those already in fellowship with a local church.
 ---
 
+We thank our Lord Jesus Christ for His grace at work among us and for you who desire to walk together with us. It is our joy to grow together in His love and in His Word, and we share this briefly so you know how we seek to follow Him.
+
 ## For those newly believing
 
 Water baptism in **the Name of Jesus Christ** is not for salvation, for we are saved by grace through faith. _Ephesians 2:8_
