@@ -48,7 +48,7 @@ body {
 .texture-leather,
 .bg-leather {
   background-color: var(--leather);
-  background-image: url("../public/leather.jpg");
+  background-image: url("../public/leather.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

@@ -66,7 +66,7 @@ function SiteHeader({ name, pathname, pinned, overlay = false }: SiteHeaderProps
       <div className="relative flex min-h-14 w-full items-center gap-3 px-6 py-3 sm:px-8 md:min-h-[5.5rem] md:gap-5 md:px-10 md:py-6 lg:px-14">
         <Link href="/" aria-label={name} className="relative z-10 shrink-0">
           <SiteImage
-            src="/seal.jpg"
+            src="/badge.png"
             alt=""
             className="h-11 w-11 rounded-full object-cover md:h-[4.25rem] md:w-[4.25rem] lg:h-[4.75rem] lg:w-[4.75rem]"
           />
