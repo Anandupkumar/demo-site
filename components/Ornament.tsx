@@ -3,7 +3,7 @@ type OrnamentProps = {
   className?: string
 };
 
-export function Ornament({ tone = "gold", className = "h-px w-16" }: OrnamentProps) {
+export function Ornament({ tone = "gold-deep", className = "h-px w-16" }: OrnamentProps) {
   const line =
     tone === "gold" ? "bg-gold" : tone === "gold-deep" ? "bg-gold-deep" : "bg-leather/30";
 

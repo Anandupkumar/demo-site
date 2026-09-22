@@ -142,7 +142,7 @@ function MenuNav() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="font-heading text-xl leading-snug text-ivory md:text-2xl"
+                  className="font-heading text-xl uppercase tracking-[0.04em] leading-snug text-ivory md:text-2xl"
                 >
                   {item.label}
                 </Link>

@@ -14,7 +14,7 @@ export function PageHero({ title, description, accent }: PageHeroProps) {
           <h1 className="text-center font-heading text-4xl font-bold uppercase tracking-[0.04em] leading-[1.15] sm:text-5xl">
             {title}
           </h1>
-          <span className="mt-6 block h-[2.5px] w-full bg-gold" aria-hidden="true" />
+          <span className="mt-6 block h-[2.5px] w-full bg-gold-deep" aria-hidden="true" />
         </div>
         {description ? (
           <p
@@ -28,7 +28,7 @@ export function PageHero({ title, description, accent }: PageHeroProps) {
           </p>
         ) : null}
         {accent ? (
-          <p className="mx-auto mt-4 text-center font-heading text-2xl leading-snug text-gold sm:text-3xl">
+          <p className="mx-auto mt-4 text-center font-heading text-2xl leading-snug text-gold-deep sm:text-3xl">
             {accent}
           </p>
         ) : null}

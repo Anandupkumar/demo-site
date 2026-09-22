@@ -29,9 +29,9 @@ export default function HomePage() {
       <section className="relative flex min-h-[60vh] items-center bg-leather px-6 py-20 text-ivory sm:py-24">
         <div className="mx-auto w-full max-w-6xl text-left">
           <div className="w-fit max-w-full">
-            <h1 className="font-heading text-[2.7rem] font-bold leading-[1.15] sm:text-[3.45rem]">
+            <h1 className="font-heading text-[clamp(1.85rem,8vw,2.7rem)] font-bold leading-[1.15] sm:text-[3.45rem]">
               <span className="block">Manchester</span>
-              <span className="block">Apostolic Brethren</span>
+              <span className="block whitespace-nowrap">Apostolic Brethren</span>
               <span className="block">Church</span>
             </h1>
             <span className="mt-6 block h-[2.5px] w-36 bg-gold-deep" aria-hidden="true" />
@@ -39,7 +39,7 @@ export default function HomePage() {
           <p className="mt-8 font-heading text-base tracking-[0.22em] uppercase text-ivory sm:text-lg">
             {site.motto}
           </p>
-          <p className="mt-4 font-heading text-[0.95rem] tracking-[0.18em] uppercase text-gold-deep sm:text-base">
+          <p className="mt-4 font-heading text-[0.78rem] tracking-[0.18em] uppercase text-gold-deep sm:text-[0.88rem]">
             {site.verseReference}
           </p>
         </div>

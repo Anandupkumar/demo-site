@@ -24,7 +24,7 @@ export function SectionHeading({
       <h2 className="font-heading text-3xl font-normal leading-[1.15] text-ink sm:text-4xl">
         {children}
       </h2>
-      <Ornament tone="leather" />
+      <Ornament tone="gold-deep" />
     </div>
   );
 }
