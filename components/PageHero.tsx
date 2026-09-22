@@ -11,7 +11,7 @@ export function PageHero({ title, description, accent }: PageHeroProps) {
     <section className="bg-leather text-ivory">
       <Container className="py-16 sm:py-20">
         <div className="mx-auto w-fit max-w-full">
-          <h1 className="text-center font-heading text-4xl font-normal leading-[1.15] sm:text-5xl">
+          <h1 className="text-center font-heading text-4xl font-bold uppercase tracking-[0.04em] leading-[1.15] sm:text-5xl">
             {title}
           </h1>
           <span className="mt-6 block h-[2.5px] w-full bg-gold" aria-hidden="true" />

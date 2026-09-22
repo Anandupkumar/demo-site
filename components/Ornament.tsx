@@ -1,13 +1,15 @@
 type OrnamentProps = {
-  tone?: "gold" | "leather"
+  tone?: "gold" | "gold-deep" | "leather"
+  className?: string
 };
 
-export function Ornament({ tone = "gold" }: OrnamentProps) {
-  const line = tone === "gold" ? "bg-gold" : "bg-leather/30";
+export function Ornament({ tone = "gold", className = "h-px w-16" }: OrnamentProps) {
+  const line =
+    tone === "gold" ? "bg-gold" : tone === "gold-deep" ? "bg-gold-deep" : "bg-leather/30";
 
   return (
     <div className="flex justify-center" aria-hidden="true">
-      <span className={`block h-px w-16 ${line}`} />
+      <span className={`block ${className} ${line}`} />
     </div>
   );
 }

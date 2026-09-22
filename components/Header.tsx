@@ -68,7 +68,7 @@ function SiteHeader({ name, pathname, pinned, overlay = false }: SiteHeaderProps
           <SiteImage
             src="/badge.png"
             alt=""
-            className="h-11 w-11 rounded-full object-cover md:h-[4.25rem] md:w-[4.25rem] lg:h-[4.75rem] lg:w-[4.75rem]"
+            className="h-11 w-11 object-contain md:h-[4.25rem] md:w-[4.25rem] lg:h-[4.75rem] lg:w-[4.75rem]"
           />
         </Link>
 
