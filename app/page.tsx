@@ -39,7 +39,7 @@ export default function HomePage() {
           <p className="mt-8 font-heading text-base tracking-[0.22em] uppercase text-ivory sm:text-lg">
             {site.motto}
           </p>
-          <p className="mt-4 font-heading text-[0.78rem] tracking-[0.18em] uppercase text-gold-deep sm:text-[0.88rem]">
+          <p className="mt-2 font-heading text-[0.78rem] tracking-[0.18em] uppercase text-gold-deep sm:text-[0.88rem]">
             {site.verseReference}
           </p>
         </div>
