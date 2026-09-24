@@ -9,33 +9,33 @@ lead: We use only the King James Version for study and preaching. All Scripture 
 
 We are a local, independent Christian church that gathers in the Name of the Lord Jesus Christ.
 
-If you want to know what we look like on a Sunday, we are like Open Brethren in practice and in church order. But unlike most Brethren assemblies, we are **not Nicene creedal**: we do not hold to the Trinity doctrine formulated at the Council of Nicaea in AD 325 (One God existing eternally in three co-equal divine persons). **We hold to the Apostolic doctrine: One God who has fully revealed Himself in Jesus Christ; the Father, Son and Holy Ghost is One God and His Name is Jesus Christ.** _Matthew 28:19; Acts 2:38_
+If you want to know what we look like on a Sunday, we are like Open Brethren in practice and in church order. But unlike most Brethren assemblies, we are **not Nicene creedal**: we do not hold to the Trinity doctrine formulated at the Council of Nicaea in AD 325 (One God existing eternally in three co-equal divine persons). **We hold to the Apostolic doctrine: One God who has fully revealed Himself in Jesus Christ;** the Father, Son and Holy Ghost is One God and His Name is Jesus Christ. _Matthew 28:19; Acts 2:38_
 
 _For in him dwelleth all the fulness of the Godhead bodily._ _Colossians 2:9_
 
 ## Open Brethren in practice
 
-**Autonomous local church** with Christ as Head.\
+Autonomous local church with Christ as Head.\
 No central denomination.
 
-**Plurality of elders** in every church. _Acts 14:23_
+Plurality of elders in every church. _Acts 14:23_
 
-**No clergy / laity divide.**\
+No clergy / laity divide.\
 Priesthood of all believers with open ministry as the Spirit leads. _1 Corinthians 14:26_
 
-**Quiet, reverent worship**\
+Quiet, reverent worship\
 No band, no instruments, simple congregational singing to the Lord.
 
-**Women do not teach** in the church. _1 Timothy 2:12_
+Women do not teach in the church. _1 Timothy 2:12_
 
-**No formal membership roll.**
+No formal membership roll.
 
-**Weekly breaking of bread.** _Acts 20:7_
+Weekly breaking of bread. _Acts 20:7_
 
-**Open Table** at the discretion of the elders, to all visiting saved believers.\
+Open Table at the discretion of the elders, to all visiting saved believers.\
 No letter required, but _let a man examine himself._ _1 Corinthians 11:28_
 
-**We keep no traditions of men.** _Matthew 15:9_
+We keep no traditions of men. _Matthew 15:9_
 
 ## Apostolic in doctrine.
 
@@ -57,13 +57,13 @@ _Philippians 2:6-8; Colossians 2:9; Galatians 4:4; Luke 1:35; John 4:24_
 
 **Our worship is to the Lord Jesus Christ.**
 
-_No man cometh unto the Father, but by me. John 14:6_
+_No man cometh unto the Father, but by me._ _John 14:6_
 
 There is no access to God outside of Jesus Christ. All access to God is given in the man in whom God the Father Himself is manifested.
 
 To praise God through Jesus is to praise the Name of Jesus, and God in Him receives it. _Hebrews 13:15._ All worship that is to the glory of the Father must bow at the Name of Jesus and be directed to Jesus Himself. Worship directed to the Father, even through Jesus, is not to the glory of God the Father; therefore, God does not receive it. _Philippians 2:9-11_
 
-_He that honoureth not the Son honoureth not the Father which hath sent him. John 5:23_
+_He that honoureth not the Son honoureth not the Father which hath sent him._ _John 5:23_
 
 ### One faith
 
@@ -71,12 +71,12 @@ Salvation by grace through faith, not of works, through the Death, Burial and Re
 
 ### One baptism
 
-_Baptized by one Spirit into one Body, the Body of Christ. 1 Corinthians 12:13_
+_Baptized by one Spirit into one Body, the Body of Christ._ _1 Corinthians 12:13_
 
 _And because ye are sons, God hath sent forth the Spirit of his Son into your hearts, crying, Abba, Father._ _Galatians 4:6_
 
 The same Spirit beareth witness, sealeth us, and leadeth us into all truth. _Romans 8:16; Ephesians 4:30; John 16:13_
 
-Water baptism is not a means of salvation, but is for public testimony and identification with Christ, **in the Holy Name of Jesus Christ** — the Name revealed to the Apostles as the Name of the Father, and of the Son, and of the Holy Ghost, preached and practiced by the Apostles. _Acts 2:38; Acts 8:16; Acts 10:48; Acts 19:5; Acts 22:16; Romans 6:3_
+Water baptism is not a means of salvation, but is for public testimony and identification with Christ, in the Holy Name of Jesus Christ — the Name revealed to the Apostles as the Name of the Father, and of the Son, and of the Holy Ghost, preached and practiced by the Apostles. _Acts 2:38; Acts 8:16; Acts 10:48; Acts 19:5; Acts 22:16; Romans 6:3_
 
-_And they continued stedfastly in the apostles' doctrine and fellowship, and in breaking of bread, and in prayers. Acts 2:42_
+_And they continued stedfastly in the apostles' doctrine and fellowship, and in breaking of bread, and in prayers._ _Acts 2:42_

@@ -20,11 +20,14 @@ export function MarkdownPage({ slug }: MarkdownPageProps) {
       <section className="bg-parchment">
         <Container className="max-w-3xl py-16 sm:py-20 text-center">
           {page.lead ? (
-            <p className="mx-auto mb-12 max-w-xl text-center font-heading text-base italic leading-[1.75] text-ink sm:text-lg">
+            <p className="mx-auto mb-12 max-w-xl text-center font-heading text-sm italic leading-[1.75] text-ink sm:text-base">
               {page.lead}
             </p>
           ) : null}
-          <MarkdownBody content={page.body} />
+          <MarkdownBody
+            content={page.body}
+            uppercaseHeadings={slug === "what-we-are"}
+          />
         </Container>
       </section>
     </>
