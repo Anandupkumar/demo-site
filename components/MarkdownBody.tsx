@@ -5,7 +5,25 @@ type MarkdownBodyProps = {
   content: string
 };
 
-const CREED_LINE = "one Lord. one faith. one baptism";
+const CREED_LINE = "one Lord. one faith. one baptism.";
+const SCRIPTURE_REFS = new Set([
+  "Matthew 28:19; Acts 2:38",
+  "Colossians 2:9",
+  "Acts 14:23",
+  "1 Corinthians 14:26",
+  "1 Timothy 2:12",
+  "Acts 20:7",
+  "1 Corinthians 11:28",
+  "Matthew 15:9",
+  "Ephesians 4:5",
+  "John 17:3; 1 Corinthians 8:6; 1 Timothy 3:16",
+  "Ephesians 4:6",
+  "1 John 5:20",
+  "Philippians 2:6-8; Colossians 2:9; Galatians 4:4; Luke 1:35; John 4:24",
+  "Galatians 4:6",
+  "Romans 8:16; Ephesians 4:30; John 16:13",
+  "Acts 2:38; Acts 8:16; Acts 10:48; Acts 19:5; Acts 22:16; Romans 6:3",
+]);
 
 function textOf(node: ReactNode): string {
   if (typeof node === "string" || typeof node === "number") {
@@ -39,6 +57,15 @@ export function MarkdownBody({ content }: MarkdownBodyProps) {
             }
 
             return <p>{children}</p>;
+          },
+          em({ children }) {
+            if (SCRIPTURE_REFS.has(textOf(children).trim())) {
+              return (
+                <em className="mt-1 block text-[0.85em]">{children}</em>
+              );
+            }
+
+            return <em>{children}</em>;
           },
         }}
       >

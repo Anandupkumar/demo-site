@@ -1,25 +1,30 @@
 ---
 title: What we are
-description: Open Brethren in practice, Apostolic in doctrine.
+description: |-
+  Open Brethren in practice
+  Apostolic in doctrine.
 accent: One Lord. One Faith. One Baptism.
 lead: We use only the King James Version for study and preaching. All Scripture quotations are KJV.
 ---
 
 We are a local, independent Christian church that gathers in the Name of the Lord Jesus Christ.
 
-If you want to know what we look like on a Sunday, we are like Open Brethren in practice and in church order. But unlike most Brethren assemblies, we are **not Nicene creedal**: we do not hold to the Trinity doctrine formulated at the Council of Nicaea in AD 325 (One God existing eternally in three co-equal divine persons). We hold to the **Apostolic doctrine**: One God who has fully revealed Himself in Jesus Christ; the Father, Son and Holy Ghost is One God and His Name is Jesus Christ. _Matthew 28:19; Acts 2:38_
+If you want to know what we look like on a Sunday, we are like Open Brethren in practice and in church order. But unlike most Brethren assemblies, we are **not Nicene creedal**: we do not hold to the Trinity doctrine formulated at the Council of Nicaea in AD 325 (One God existing eternally in three co-equal divine persons). **We hold to the Apostolic doctrine: One God who has fully revealed Himself in Jesus Christ; the Father, Son and Holy Ghost is One God and His Name is Jesus Christ.** _Matthew 28:19; Acts 2:38_
 
-_For in him dwelleth all the fulness of the Godhead bodily. Colossians 2:9_
+_For in him dwelleth all the fulness of the Godhead bodily._ _Colossians 2:9_
 
 ## Open Brethren in practice
 
-**Autonomous local church** with Christ as Head. No central denomination.
+**Autonomous local church** with Christ as Head.\
+No central denomination.
 
 **Plurality of elders** in every church. _Acts 14:23_
 
-**No clergy / laity divide.** Priesthood of all believers with open ministry as the Spirit leads. _1 Corinthians 14:26_
+**No clergy / laity divide.**\
+Priesthood of all believers with open ministry as the Spirit leads. _1 Corinthians 14:26_
 
-**Quiet, reverent worship** — no band, no instruments, simple congregational singing to the Lord.
+**Quiet, reverent worship**\
+No band, no instruments, simple congregational singing to the Lord.
 
 **Women do not teach** in the church. _1 Timothy 2:12_
 
@@ -27,13 +32,14 @@ _For in him dwelleth all the fulness of the Godhead bodily. Colossians 2:9_
 
 **Weekly breaking of bread.** _Acts 20:7_
 
-**Open Table** at the discretion of the elders, to all visiting saved believers. No letter required, but _let a man examine himself. 1 Corinthians 11:28_
+**Open Table** at the discretion of the elders, to all visiting saved believers.\
+No letter required, but _let a man examine himself._ _1 Corinthians 11:28_
 
 **We keep no traditions of men.** _Matthew 15:9_
 
-## Apostolic in doctrine
+## Apostolic in doctrine.
 
-one Lord. one faith. one baptism
+one Lord. one faith. one baptism.
 
 _Ephesians 4:5_
 
@@ -41,9 +47,9 @@ _Ephesians 4:5_
 
 Scripture states that the only God is the Father, and that this God was manifest in the flesh in Jesus Christ. _John 17:3; 1 Corinthians 8:6; 1 Timothy 3:16_
 
-_One God and Father of all, who is above all, and through all, and in you all. Ephesians 4:6_
+_One God and Father of all, who is above all, and through all, and in you all._ _Ephesians 4:6_
 
-The One God and Father of all is the Lord Jesus Christ. _He is the true God, and eternal life. 1 John 5:20_
+The One God and Father of all is the Lord Jesus Christ. _He is the true God, and eternal life._ _1 John 5:20_
 
 Jesus Christ did not begin at Bethlehem. He, being in the form of the invisible God, with all the fullness of the Godhead dwelling in Him, is Eternal. When the fullness of the time had come, He was made flesh in the likeness of men, taking upon Himself the form of a servant. Being begotten as the Son of God and sent, He was obedient unto God, the invisible Spirit that dwelt in Him.
 
@@ -67,7 +73,7 @@ Salvation by grace through faith, not of works, through the Death, Burial and Re
 
 _Baptized by one Spirit into one Body, the Body of Christ. 1 Corinthians 12:13_
 
-_And because ye are sons, God hath sent forth the Spirit of his Son into your hearts, crying, Abba, Father. Galatians 4:6_
+_And because ye are sons, God hath sent forth the Spirit of his Son into your hearts, crying, Abba, Father._ _Galatians 4:6_
 
 The same Spirit beareth witness, sealeth us, and leadeth us into all truth. _Romans 8:16; Ephesians 4:30; John 16:13_
 

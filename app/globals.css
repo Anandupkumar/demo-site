@@ -54,6 +54,14 @@ body {
   background-repeat: no-repeat;
 }
 
+#site-nav {
+  background-color: var(--leather);
+  background-image: url("../public/leather.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .texture-parchment,
 .bg-parchment {
   background-color: var(--parchment);

@@ -7,6 +7,12 @@ type PageHeroProps = {
 };
 
 export function PageHero({ title, description, accent }: PageHeroProps) {
+  const descriptionLines = description
+    ?.split(/\n+/)
+    .map((line) => line.trim())
+    .filter(Boolean) ?? [];
+  const stacked = descriptionLines.length > 1;
+
   return (
     <section className="bg-leather text-ivory">
       <Container className="py-16 sm:py-20">
@@ -16,15 +22,20 @@ export function PageHero({ title, description, accent }: PageHeroProps) {
           </h1>
           <span className="mt-6 block h-[2.5px] w-full bg-gold-deep" aria-hidden="true" />
         </div>
-        {description ? (
+        {descriptionLines.length > 0 ? (
           <p
             className={
               accent
-                ? "mx-auto mt-8 text-center font-heading text-xl leading-snug text-ivory sm:whitespace-nowrap sm:text-2xl"
+                ? `mx-auto mt-8 text-center font-heading text-xl leading-snug text-ivory sm:text-2xl${stacked ? " uppercase tracking-[0.04em]" : " sm:whitespace-nowrap"}`
                 : "mx-auto mt-6 max-w-2xl text-center leading-relaxed text-ivory/88"
             }
           >
-            {description}
+            {descriptionLines.map((line, index) => (
+              <span key={line}>
+                {index > 0 ? <br /> : null}
+                {line}
+              </span>
+            ))}
           </p>
         ) : null}
         {accent ? (
