@@ -55,7 +55,7 @@ export function MarkdownBody({ content, uppercaseHeadings = false }: MarkdownBod
           p({ children }) {
             if (textOf(children).trim() === CREED_LINE) {
               return (
-                <p className="creed-line mx-auto mt-4 w-fit max-w-full font-heading text-[1.5rem] uppercase leading-[1.15] tracking-[0.04em] text-leather">
+                <p className="creed-line mx-auto mt-4 w-fit max-w-full font-heading text-[1.5rem] uppercase leading-[1.15] tracking-[0.04em]">
                   {children}
                   <span
                     className="mt-3 block h-[2.5px] w-full bg-gold-deep"
@@ -66,7 +66,7 @@ export function MarkdownBody({ content, uppercaseHeadings = false }: MarkdownBod
             }
 
             if (textOf(children).trim() === WORSHIP_LINE) {
-              return <p className="worship-line text-leather">{children}</p>;
+              return <p className="worship-line">{children}</p>;
             }
 
             if (isScriptureRef(textOf(children))) {

@@ -4,6 +4,7 @@
   --leather: #4a2115;
   --leather-mid: #5c2a1c;
   --leather-light: #6e3423;
+  --leather-heading: #8a2a0c;
   --parchment: #fbfdf1;
   --parchment-deep: #f4f6ea;
   --ivory: #f8f2e4;
@@ -18,6 +19,7 @@
   --color-leather: var(--leather);
   --color-leather-mid: var(--leather-mid);
   --color-leather-light: var(--leather-light);
+  --color-leather-heading: var(--leather-heading);
   --color-parchment: var(--parchment);
   --color-parchment-deep: var(--parchment-deep);
   --color-ivory: var(--ivory);
@@ -105,13 +107,15 @@ body {
 }
 
 .prose-church h2[data-section="doctrine"] ~ h3 {
-  color: var(--leather);
+  color: var(--leather-heading);
+  font-weight: 600;
 }
 
 .prose-church .creed-line,
 .prose-church .worship-line,
 .prose-church .worship-line strong {
-  color: var(--leather);
+  color: var(--leather-heading);
+  font-weight: 600;
 }
 
 .prose-church p {
