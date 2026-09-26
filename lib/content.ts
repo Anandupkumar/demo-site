@@ -155,8 +155,8 @@ export function parsePageMarkdown(slug: string, raw: string): PageDoc {
   const title = asString(data.title);
   const body = content.trim();
 
-  if (!title || !body) {
-    throw new Error(`Page "${slug}" is missing title or body`);
+  if (!title) {
+    throw new Error(`Page "${slug}" is missing a title`);
   }
 
   return {

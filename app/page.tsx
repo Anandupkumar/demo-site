@@ -84,14 +84,28 @@ export default function HomePage() {
             {inclusionLines ? (
               <>
                 <p className="mt-6">{inclusionLines[0]}</p>
-                <p className="mt-6">{inclusionLines[1]}</p>
+                <p className="mt-6">
+                  {inclusionLines[1].slice(0, inclusionLines[1].lastIndexOf("Christ is our Head."))}
+                  <span className="block whitespace-nowrap sm:inline">
+                    {inclusionLines[1].slice(inclusionLines[1].lastIndexOf("Christ is our Head."))}
+                  </span>
+                </p>
               </>
             ) : site.inclusion ? (
               <p className="mt-6">{site.inclusion}</p>
             ) : null}
             {site.acts242 ? (
               <p className="mt-6 italic">
-                {site.acts242.slice(0, site.acts242.lastIndexOf("and in prayers"))}
+                {site.acts242.slice(
+                  0,
+                  site.acts242.lastIndexOf("breaking of bread"),
+                )}
+                <span className="whitespace-nowrap">
+                  {site.acts242.slice(
+                    site.acts242.lastIndexOf("breaking of bread"),
+                    site.acts242.lastIndexOf("and in prayers"),
+                  )}
+                </span>
                 <span className="block">
                   {site.acts242.slice(site.acts242.lastIndexOf("and in prayers"))}
                 </span>

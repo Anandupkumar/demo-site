@@ -1,4 +1,4 @@
-import { isValidElement, type ReactNode } from "react";
+import { Fragment, isValidElement, type ReactNode } from "react";
 import ReactMarkdown from "react-markdown";
 
 type MarkdownBodyProps = {
@@ -8,6 +8,8 @@ type MarkdownBodyProps = {
   className?: string
 };
 
+const EXAMINE_LINE = "let a man examine himself.";
+const SAVIOUR_LINE = "Lord and Saviour Jesus Christ.";
 const CREED_LINE = "one Lord. one faith. one baptism.";
 const WORSHIP_LINE = "Our worship is to the Lord Jesus Christ.";
 const HEAD_LINE = "Autonomous local church with Christ as Head.";
@@ -18,6 +20,79 @@ const SCRIPTURE_REF =
 
 function isScriptureRef(text: string): boolean {
   return SCRIPTURE_REF.test(text.trim());
+}
+
+function withGodLine(children: ReactNode): ReactNode {
+  const nodes = Array.isArray(children) ? children : [children];
+  const result: ReactNode[] = [];
+
+  for (let index = 0; index < nodes.length; index += 1) {
+    const node = nodes[index];
+    if (typeof node === "string" && node.includes("is the Lord Jesus Christ.")) {
+      const splitAt = node.lastIndexOf("is the Lord Jesus Christ.");
+      if (splitAt > 0) result.push(node.slice(0, splitAt));
+      result.push(
+        <span key="lord" className="block whitespace-nowrap sm:inline">
+          {node.slice(splitAt)}
+        </span>,
+      );
+      continue;
+    }
+    if (isValidElement(node) && textOf(node).includes("He is the true God")) {
+      result.push(
+        <span key="true-god" className="block whitespace-nowrap sm:inline">
+          {node}
+        </span>,
+      );
+      continue;
+    }
+    result.push(<Fragment key={index}>{node}</Fragment>);
+  }
+
+  return result;
+}
+
+function withExamineLine(children: ReactNode): ReactNode {
+  const nodes = Array.isArray(children) ? children : [children];
+  const result: ReactNode[] = [];
+
+  for (let index = 0; index < nodes.length; index += 1) {
+    const node = nodes[index];
+    if (typeof node === "string" && node.includes("but ")) {
+      const splitAt = node.lastIndexOf("but ");
+      result.push(node.slice(0, splitAt));
+      result.push(
+        <span key="examine" className="block whitespace-nowrap sm:inline">
+          {node.slice(splitAt)}
+          {nodes[index + 1]}
+        </span>,
+      );
+      index += 1;
+      continue;
+    }
+    result.push(<Fragment key={index}>{node}</Fragment>);
+  }
+
+  return result;
+}
+
+function withMobileLine(node: ReactNode, phrase: string): ReactNode {
+  if (typeof node === "string") {
+    const index = node.lastIndexOf(phrase);
+    if (index === -1) return node;
+    return (
+      <>
+        {node.slice(0, index)}
+        <span className="block sm:inline">{node.slice(index)}</span>
+      </>
+    );
+  }
+  if (Array.isArray(node)) {
+    return node.map((child, index) => (
+      <Fragment key={index}>{withMobileLine(child, phrase)}</Fragment>
+    ));
+  }
+  return node;
 }
 
 function textOf(node: ReactNode): string {
@@ -107,6 +182,18 @@ export function MarkdownBody({
 
             if (isScriptureRef(textOf(children))) {
               return <p className="scripture-line">{children}</p>;
+            }
+
+            if (textOf(children).includes("is the Lord Jesus Christ.")) {
+              return <p>{withGodLine(children)}</p>;
+            }
+
+            if (textOf(children).includes(EXAMINE_LINE)) {
+              return <p>{withExamineLine(children)}</p>;
+            }
+
+            if (textOf(children).includes(SAVIOUR_LINE)) {
+              return <p>{withMobileLine(children, SAVIOUR_LINE)}</p>;
             }
 
             return <p>{children}</p>;

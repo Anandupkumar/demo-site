@@ -22,8 +22,8 @@ export default function ServicesPage() {
       <PageHero title={page.title} />
       <section className="bg-parchment">
         <Container className="max-w-3xl py-16 sm:py-20 text-center">
-          <MarkdownBody content={doc.body} />
-          <div className="mt-12">
+          {doc.body ? <MarkdownBody content={doc.body} /> : null}
+          <div className={doc.body ? "mt-12" : undefined}>
             <MeetingTimes meetings={site.gatherings} />
           </div>
           <div className="mt-12">
