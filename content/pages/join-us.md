@@ -6,7 +6,7 @@ We thank our Lord Jesus Christ for His grace at work among us and for you who de
 
 ## For those newly believing
 
-Water baptism in **the Name of Jesus Christ** is not for salvation, for we are saved by grace through faith. _Ephesians 2:8_
+Water baptism in the Name of Jesus Christ is not for salvation, for we are saved by grace through faith. _Ephesians 2:8_
 
 It is your open identification with Jesus Christ — your public testimony that you have believed on Him as the only true God and Saviour, and that you identify with His Death, Burial and Resurrection. _Romans 6:4_
 
