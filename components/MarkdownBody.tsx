@@ -44,7 +44,15 @@ export function MarkdownBody({ content, uppercaseHeadings = false }: MarkdownBod
                 : undefined;
 
             return (
-              <h2 className={headingClass} data-section={section}>
+              <h2
+                className={[
+                  headingClass,
+                  section === "doctrine" ? "whitespace-nowrap" : undefined,
+                ]
+                  .filter(Boolean)
+                  .join(" ") || undefined}
+                data-section={section}
+              >
                 {children}
               </h2>
             );
@@ -55,10 +63,10 @@ export function MarkdownBody({ content, uppercaseHeadings = false }: MarkdownBod
           p({ children }) {
             if (textOf(children).trim() === CREED_LINE) {
               return (
-                <p className="creed-line mx-auto mt-4 w-fit max-w-full font-heading text-[1.5rem] uppercase leading-[1.15] tracking-[0.04em]">
-                  {children}
+                <p className="creed-line mx-auto mt-2 w-fit max-w-full whitespace-nowrap font-heading text-xl uppercase leading-[1.15] tracking-[0.04em] sm:text-2xl">
+                  <span className="block [font-size:0.58em]">{children}</span>
                   <span
-                    className="mt-3 block h-[2.5px] w-full bg-gold-deep"
+                    className="mx-auto mt-3 block h-[2.5px] w-1/2 bg-gold-deep"
                     aria-hidden="true"
                   />
                 </p>

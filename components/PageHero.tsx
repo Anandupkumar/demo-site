@@ -20,7 +20,7 @@ export function PageHero({ title, description, accent }: PageHeroProps) {
           <h1 className="text-center font-heading text-4xl font-bold uppercase tracking-[0.04em] leading-[1.15] sm:text-5xl">
             {title}
           </h1>
-          <span className="mt-6 block h-[2.5px] w-full bg-gold-deep" aria-hidden="true" />
+          <span className="mx-auto mt-6 block h-[2.5px] w-1/2 bg-gold-deep" aria-hidden="true" />
         </div>
         {descriptionLines.length > 0 ? (
           stacked ? (
@@ -31,7 +31,7 @@ export function PageHero({ title, description, accent }: PageHeroProps) {
               <div className="mx-auto mt-3 w-fit max-w-full">
                 <p>{descriptionLines[descriptionLines.length - 1]}</p>
                 {accent ? (
-                  <p className="mt-4 w-full whitespace-nowrap uppercase tracking-[0.04em] text-gold-deep [font-size:0.58em]">
+                  <p className="mt-2 w-full whitespace-nowrap uppercase tracking-[0.04em] text-gold-deep [font-size:0.58em]">
                     {accent}
                   </p>
                 ) : null}

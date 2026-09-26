@@ -2,7 +2,7 @@
 title: What we are
 description: |-
   Open Brethren in practice
-  Apostolic in doctrine.
+  Apostolic in doctrine
 accent: One Lord. One Faith. One Baptism.
 lead: We use only the King James Version for study and preaching. All Scripture quotations are KJV.
 ---
@@ -23,7 +23,7 @@ Plurality of elders in every church. _Acts 14:23_
 No clergy / laity divide.\
 Priesthood of all believers with open ministry as the Spirit leads. _1 Corinthians 14:26_
 
-Quiet, reverent worship\
+Quiet, reverent worship.\
 No band, no instruments, simple congregational singing to the Lord.
 
 Women do not teach in the church. _1 Timothy 2:12_
@@ -32,12 +32,12 @@ No formal membership roll.
 
 Weekly breaking of bread. _Acts 20:7_
 
-Open Table at the discretion of the elders, to all visiting saved believers.\
+Open table at the discretion of the elders, to all visiting saved believers.\
 No letter required, but _let a man examine himself._ _1 Corinthians 11:28_
 
 We keep no traditions of men. _Matthew 15:9_
 
-## Apostolic in doctrine.
+## Apostolic in doctrine
 
 one Lord. one faith. one baptism.
 
@@ -61,7 +61,9 @@ _No man cometh unto the Father, but by me._ _John 14:6_
 
 There is no access to God outside of Jesus Christ. All access to God is given in the man in whom God the Father Himself is manifested.
 
-To praise God through Jesus is to praise the Name of Jesus, and God in Him receives it. _Hebrews 13:15._ All worship that is to the glory of the Father must bow at the Name of Jesus and be directed to Jesus Himself. Worship directed to the Father, even through Jesus, is not to the glory of God the Father; therefore, God does not receive it. _Philippians 2:9-11_
+To praise God through Jesus is to praise the Name of Jesus, and God in Him receives it. _Hebrews 13:15._
+
+All worship that is to the glory of the Father must bow at the Name of Jesus and be directed to Jesus Himself. Worship directed to the Father, even through Jesus, is not to the glory of God the Father; therefore, God does not receive it. _Philippians 2:9-11_
 
 _He that honoureth not the Son honoureth not the Father which hath sent him._ _John 5:23_
 
@@ -71,7 +73,7 @@ Salvation by grace through faith, not of works, through the Death, Burial and Re
 
 ### One baptism
 
-_Baptized by one Spirit into one Body, the Body of Christ._ _1 Corinthians 12:13_
+Baptized by one Spirit into one Body, the Body of Christ. _1 Corinthians 12:13_
 
 _And because ye are sons, God hath sent forth the Spirit of his Son into your hearts, crying, Abba, Father._ _Galatians 4:6_
 
