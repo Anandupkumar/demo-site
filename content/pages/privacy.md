@@ -1,6 +1,5 @@
 ---
 title: Privacy Policy
-description: How Manchester Apostolic Brethren Church handles personal data under UK GDPR.
 ---
 
 Manchester Apostolic Brethren Church is committed to protecting your privacy and handling your personal data with care, respect, and in full compliance with UK data protection law, including the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.

@@ -4,9 +4,10 @@ type PageHeroProps = {
   title: string
   description?: string
   accent?: string
+  compact?: boolean
 };
 
-export function PageHero({ title, description, accent }: PageHeroProps) {
+export function PageHero({ title, description, accent, compact = false }: PageHeroProps) {
   const descriptionLines = description
     ?.split(/\n+/)
     .map((line) => line.trim())
@@ -17,7 +18,13 @@ export function PageHero({ title, description, accent }: PageHeroProps) {
     <section className="bg-leather text-ivory">
       <Container className="py-16 sm:py-20">
         <div className="mx-auto w-fit max-w-full">
-          <h1 className="text-center font-heading text-4xl font-bold uppercase tracking-[0.04em] leading-[1.15] sm:text-5xl">
+          <h1
+            className={
+              compact
+                ? "text-center font-heading text-3xl font-bold uppercase tracking-[0.04em] leading-[1.15] sm:text-4xl"
+                : "text-center font-heading text-4xl font-bold uppercase tracking-[0.04em] leading-[1.15] sm:text-5xl"
+            }
+          >
             {title}
           </h1>
           <span className="hero-rule mx-auto mt-6 block h-[2.5px] bg-gold-deep" aria-hidden="true" />

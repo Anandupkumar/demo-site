@@ -1,6 +1,5 @@
 ---
 title: Safeguarding
-description: Our commitment to a safe, welcoming, and secure environment for everyone.
 ---
 
 At Manchester Apostolic Brethren Church, we are committed to creating a safe, welcoming, and secure environment for everyone.

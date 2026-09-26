@@ -6,7 +6,7 @@ This church was not formed as a community group. It was planted as a local churc
 
 In February 2026, the Lord laid it upon the heart of brother Colein Wilfred to plant a local testimony in Manchester unto the Name of the Lord Jesus Christ — that souls in this city might hear the Gospel and saints might be gathered to His Name, according to the New Testament pattern.
 
-This is not man's work, but the Lord's.
+**This is not man's work, but the Lord's.**
 
 We are not a denomination, nor an organisation. We are a local church, continuing stedfastly in the apostles' doctrine and fellowship, and in breaking of bread, and in prayers. _Acts 2:42_
 

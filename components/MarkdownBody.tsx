@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown";
 type MarkdownBodyProps = {
   content: string
   uppercaseHeadings?: boolean
+  className?: string
 };
 
 const CREED_LINE = "one Lord. one faith. one baptism.";
@@ -31,11 +32,15 @@ function textOf(node: ReactNode): string {
   return "";
 }
 
-export function MarkdownBody({ content, uppercaseHeadings = false }: MarkdownBodyProps) {
+export function MarkdownBody({
+  content,
+  uppercaseHeadings = false,
+  className,
+}: MarkdownBodyProps) {
   const headingClass = uppercaseHeadings ? "uppercase tracking-[0.04em]" : undefined;
 
   return (
-    <div className="prose-church">
+    <div className={["prose-church", className].filter(Boolean).join(" ")}>
       <ReactMarkdown
         components={{
           h2({ children }) {
@@ -59,7 +64,7 @@ export function MarkdownBody({ content, uppercaseHeadings = false }: MarkdownBod
                 data-section={section}
               >
                 {children}
-                {section === "practice" ? (
+                {section === "practice" || section === "doctrine" ? (
                   <span
                     className={SECTION_RULE}
                     aria-hidden="true"
@@ -76,10 +81,6 @@ export function MarkdownBody({ content, uppercaseHeadings = false }: MarkdownBod
               return (
                 <p className="creed-line mx-auto mt-2 w-fit max-w-full whitespace-nowrap font-heading text-xl uppercase leading-[1.15] tracking-[0.04em] sm:text-2xl">
                   <span className="block [font-size:0.58em]">{children}</span>
-                  <span
-                    className={SECTION_RULE}
-                    aria-hidden="true"
-                  />
                 </p>
               );
             }

@@ -9,6 +9,7 @@ type MarkdownPageProps = {
 
 export function MarkdownPage({ slug }: MarkdownPageProps) {
   const page = getPage(slug);
+  const compact = slug === "privacy" || slug === "safeguarding";
 
   return (
     <>
@@ -16,6 +17,7 @@ export function MarkdownPage({ slug }: MarkdownPageProps) {
         title={page.title}
         description={page.description}
         accent={page.accent}
+        compact={compact}
       />
       <section className="bg-parchment">
         <Container className="max-w-3xl py-16 sm:py-20 text-center">
@@ -27,6 +29,7 @@ export function MarkdownPage({ slug }: MarkdownPageProps) {
           <MarkdownBody
             content={page.body}
             uppercaseHeadings={slug === "what-we-are"}
+            className={compact ? "prose-church-compact" : undefined}
           />
         </Container>
       </section>
