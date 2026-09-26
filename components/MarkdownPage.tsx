@@ -29,6 +29,7 @@ export function MarkdownPage({ slug }: MarkdownPageProps) {
           <MarkdownBody
             content={page.body}
             uppercaseHeadings={slug === "what-we-are"}
+            underlineHeadings={slug === "join-us"}
             className={compact ? "prose-church-compact" : undefined}
           />
         </Container>

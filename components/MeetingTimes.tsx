@@ -11,7 +11,7 @@ export function MeetingTimes({ meetings, note }: MeetingTimesProps) {
       {note ? (
         <p className="mb-8 text-center text-ink-soft italic">{note}</p>
       ) : null}
-      <ul className="grid gap-5 sm:grid-cols-2">
+      <ul className="mx-auto grid max-w-md gap-5">
         {meetings.map((meeting) => (
           <li
             key={`${meeting.name}-${meeting.time}`}

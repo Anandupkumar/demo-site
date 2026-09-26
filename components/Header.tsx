@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { SiteImage } from "@/components/SiteImage";
+import { scrollDocumentToTop } from "@/components/ScrollToTop";
 import { mainNav } from "@/lib/nav";
 
 type HeaderProps = Readonly<{
@@ -92,9 +93,13 @@ function MenuNav() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : "";
+    const html = document.documentElement;
+    const body = document.body;
+    html.style.overflow = open ? "hidden" : "";
+    body.style.overflow = open ? "hidden" : "";
     return () => {
-      document.body.style.overflow = "";
+      html.style.overflow = "";
+      body.style.overflow = "";
     };
   }, [open]);
 
@@ -142,7 +147,9 @@ function MenuNav() {
                 <Link
                   key={item.href}
                   href={item.href}
+                  scroll={false}
                   className="font-heading text-xl uppercase tracking-[0.04em] leading-snug text-ivory md:text-2xl"
+                  onClick={scrollDocumentToTop}
                 >
                   {item.label}
                 </Link>

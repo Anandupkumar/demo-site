@@ -3,6 +3,7 @@ import { Libre_Baskerville } from "next/font/google";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import { getSiteConfig } from "@/lib/content";
 import "./globals.css";
 
@@ -34,6 +35,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="en-GB" className={`${baskerville.variable} h-full`}>
       <body className="min-h-full flex flex-col bg-parchment font-body antialiased">
         <JsonLd site={site} />
+        <ScrollToTop />
         <Header name={site.name} />
         <div className="flex-1">{children}</div>
         <Footer site={site} />

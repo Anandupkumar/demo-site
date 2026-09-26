@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown";
 type MarkdownBodyProps = {
   content: string
   uppercaseHeadings?: boolean
+  underlineHeadings?: boolean
   className?: string
 };
 
@@ -35,6 +36,7 @@ function textOf(node: ReactNode): string {
 export function MarkdownBody({
   content,
   uppercaseHeadings = false,
+  underlineHeadings = false,
   className,
 }: MarkdownBodyProps) {
   const headingClass = uppercaseHeadings ? "uppercase tracking-[0.04em]" : undefined;
@@ -50,13 +52,18 @@ export function MarkdownBody({
               : /apostolic in doctrine/i.test(heading)
                 ? "doctrine"
                 : undefined;
+            const showRule =
+              section === "practice" ||
+              section === "doctrine" ||
+              underlineHeadings;
 
             return (
               <h2
                 className={[
                   headingClass,
+                  showRule ? "mx-auto w-fit max-w-full" : undefined,
                   section === "practice" || section === "doctrine"
-                    ? "mx-auto w-fit max-w-full whitespace-nowrap"
+                    ? "whitespace-nowrap"
                     : undefined,
                 ]
                   .filter(Boolean)
@@ -64,7 +71,7 @@ export function MarkdownBody({
                 data-section={section}
               >
                 {children}
-                {section === "practice" || section === "doctrine" ? (
+                {showRule ? (
                   <span
                     className={SECTION_RULE}
                     aria-hidden="true"

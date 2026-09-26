@@ -10,4 +10,4 @@ In February 2026, the Lord laid it upon the heart of brother Colein Wilfred to p
 
 We are not a denomination, nor an organisation. We are a local church, continuing stedfastly in the apostles' doctrine and fellowship, and in breaking of bread, and in prayers. _Acts 2:42_
 
-_So then neither is he that planteth any thing, neither he that watereth; but God that giveth the increase. 1 Corinthians 3:7_
+_So then neither is he that planteth any thing, neither he that watereth; but God that giveth the increase._ _1 Corinthians 3:7_

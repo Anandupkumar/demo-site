@@ -15,7 +15,7 @@ export default function HomePage() {
   const site = getSiteConfig();
   const welcomeText = site.welcome.join(" ");
   const welcomeLines = welcomeText
-    ? splitAfter(welcomeText, "Manchester. We are")
+    ? splitAfter(welcomeText, "Atherton, Manchester.")
     : null;
   const ministryLines = site.ministry
     ? splitAfter(site.ministry, "pray together,")
@@ -26,10 +26,10 @@ export default function HomePage() {
 
   return (
     <>
-      <section className="relative flex min-h-[60vh] items-center bg-leather px-6 py-20 text-ivory sm:py-24">
+      <section className="relative flex min-h-[60vh] items-center bg-leather px-4 py-20 text-ivory sm:px-6 sm:py-24">
         <div className="mx-auto w-full max-w-6xl text-left">
           <div className="w-fit max-w-full">
-            <h1 className="font-heading text-[clamp(1.85rem,8vw,2.7rem)] font-bold leading-[1.15] sm:text-[3.45rem]">
+            <h1 className="font-heading text-[clamp(2.05rem,9vw,2.65rem)] font-bold leading-[1.15] sm:text-[3.45rem]">
               <span className="block">Manchester</span>
               <span className="block whitespace-nowrap">Apostolic Brethren</span>
               <span className="block">Church</span>
@@ -58,7 +58,10 @@ export default function HomePage() {
               <p>
                 {welcomeLines[0]}
                 <br />
-                {welcomeLines[1]}
+                {welcomeLines[1].slice(0, welcomeLines[1].lastIndexOf("Lord Jesus Christ"))}
+                <span className="block sm:inline">
+                  {welcomeLines[1].slice(welcomeLines[1].lastIndexOf("Lord Jesus Christ"))}
+                </span>
               </p>
             ) : welcomeText ? (
               <p>{welcomeText}</p>
@@ -86,7 +89,14 @@ export default function HomePage() {
             ) : site.inclusion ? (
               <p className="mt-6">{site.inclusion}</p>
             ) : null}
-            {site.acts242 ? <p className="mt-6 italic">{site.acts242}</p> : null}
+            {site.acts242 ? (
+              <p className="mt-6 italic">
+                {site.acts242.slice(0, site.acts242.lastIndexOf("and in prayers"))}
+                <span className="block">
+                  {site.acts242.slice(site.acts242.lastIndexOf("and in prayers"))}
+                </span>
+              </p>
+            ) : null}
             {site.acts242Ref ? (
               <p className="text-[0.85em] italic">{site.acts242Ref}</p>
             ) : null}
