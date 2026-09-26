@@ -29,13 +29,10 @@ gatherings:
   - name: Breaking of Bread
     day: Sunday
     time: 11:00 AM
-    description: The Lord's Supper — the centre of our gathering.
   - name: Sunday School and Word Ministry
     day: Sunday
     time: 12:00 PM
-    description: Ministry of the Word with the children and the church.
   - name: Prayer Meeting
     day: Thursday
     time: 8:00 PM
-    description: Prayer meeting on Zoom.
 ---

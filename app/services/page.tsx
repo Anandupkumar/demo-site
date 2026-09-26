@@ -19,7 +19,7 @@ export default function ServicesPage() {
 
   return (
     <>
-      <PageHero title={page.title} description={page.description} />
+      <PageHero title={page.title} />
       <section className="bg-parchment">
         <Container className="max-w-3xl py-16 sm:py-20 text-center">
           <MarkdownBody content={doc.body} />

@@ -23,7 +23,9 @@ export function MeetingTimes({ meetings, note }: MeetingTimesProps) {
             <h3 className="mt-2 font-heading text-xl font-normal leading-[1.15] text-ink">
               {meeting.name}
             </h3>
-            <p className="mt-2 text-ink-soft leading-relaxed">{meeting.description}</p>
+            {meeting.description ? (
+              <p className="mt-2 text-ink-soft leading-relaxed">{meeting.description}</p>
+            ) : null}
           </li>
         ))}
       </ul>
