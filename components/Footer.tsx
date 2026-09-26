@@ -22,11 +22,6 @@ export function Footer({ site }: FooterProps) {
           <Ornament />
         </div>
 
-        <p className="mt-12 font-heading text-[0.68rem] tracking-[0.2em] uppercase text-gold-deep">
-          Find us
-        </p>
-        <p className="mt-3 text-sm text-ivory/80">{site.address}</p>
-
         <p className="mt-12 text-ivory/80 italic">{site.verse}</p>
         <p className="mt-3 font-heading text-[0.65rem] tracking-[0.22em] uppercase text-gold-deep">
           {site.verseReference}
