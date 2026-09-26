@@ -8,6 +8,8 @@ type MarkdownBodyProps = {
 
 const CREED_LINE = "one Lord. one faith. one baptism.";
 const WORSHIP_LINE = "Our worship is to the Lord Jesus Christ.";
+const SECTION_RULE =
+  "section-rule mx-auto mt-3 block h-[2.5px] bg-gold-deep";
 const SCRIPTURE_REF =
   /^(?:(?:\d+\s)?[A-Za-z]+(?:\s[A-Za-z]+)*\s+\d+:\d+(?:-\d+)?)(?:;\s*(?:(?:\d+\s)?[A-Za-z]+(?:\s[A-Za-z]+)*\s+\d+:\d+(?:-\d+)?))*\.?$/;
 
@@ -47,13 +49,21 @@ export function MarkdownBody({ content, uppercaseHeadings = false }: MarkdownBod
               <h2
                 className={[
                   headingClass,
-                  section === "doctrine" ? "whitespace-nowrap" : undefined,
+                  section === "practice" || section === "doctrine"
+                    ? "mx-auto w-fit max-w-full whitespace-nowrap"
+                    : undefined,
                 ]
                   .filter(Boolean)
                   .join(" ") || undefined}
                 data-section={section}
               >
                 {children}
+                {section === "practice" ? (
+                  <span
+                    className={SECTION_RULE}
+                    aria-hidden="true"
+                  />
+                ) : null}
               </h2>
             );
           },
@@ -66,7 +76,7 @@ export function MarkdownBody({ content, uppercaseHeadings = false }: MarkdownBod
                 <p className="creed-line mx-auto mt-2 w-fit max-w-full whitespace-nowrap font-heading text-xl uppercase leading-[1.15] tracking-[0.04em] sm:text-2xl">
                   <span className="block [font-size:0.58em]">{children}</span>
                   <span
-                    className="mx-auto mt-3 block h-[2.5px] w-1/2 bg-gold-deep"
+                    className={SECTION_RULE}
                     aria-hidden="true"
                   />
                 </p>

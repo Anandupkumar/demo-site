@@ -106,9 +106,15 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.prose-church h2[data-section="practice"],
 .prose-church h2[data-section="doctrine"] {
   font-weight: 700;
-  font-size: clamp(1.15rem, 5.4vw, 1.75rem);
+  font-size: clamp(1rem, 4.4vw, 1.75rem);
+  letter-spacing: 0.02em;
+}
+
+.prose-church .section-rule {
+  width: 10.75rem;
 }
 
 .prose-church h2[data-section="doctrine"] ~ h3 {
