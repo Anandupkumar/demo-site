@@ -8,6 +8,7 @@ type MarkdownBodyProps = {
 
 const CREED_LINE = "one Lord. one faith. one baptism.";
 const WORSHIP_LINE = "Our worship is to the Lord Jesus Christ.";
+const HEAD_LINE = "Autonomous local church with Christ as Head.";
 const SECTION_RULE =
   "section-rule mx-auto mt-3 block h-[2.5px] bg-gold-deep";
 const SCRIPTURE_REF =
@@ -79,6 +80,15 @@ export function MarkdownBody({ content, uppercaseHeadings = false }: MarkdownBod
                     className={SECTION_RULE}
                     aria-hidden="true"
                   />
+                </p>
+              );
+            }
+
+            if (textOf(children).trim() === HEAD_LINE) {
+              return (
+                <p>
+                  Autonomous local church with{" "}
+                  <span className="block sm:inline">Christ as Head.</span>
                 </p>
               );
             }

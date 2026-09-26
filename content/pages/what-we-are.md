@@ -15,7 +15,8 @@ _For in him dwelleth all the fulness of the Godhead bodily._ _Colossians 2:9_
 
 ## Open Brethren in practice
 
-Autonomous local church with Christ as Head.\
+Autonomous local church with Christ as Head.
+
 No central denomination.
 
 Plurality of elders in every church. _Acts 14:23_
