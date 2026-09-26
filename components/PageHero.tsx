@@ -20,7 +20,7 @@ export function PageHero({ title, description, accent }: PageHeroProps) {
           <h1 className="text-center font-heading text-4xl font-bold uppercase tracking-[0.04em] leading-[1.15] sm:text-5xl">
             {title}
           </h1>
-          <span className="mx-auto mt-6 block h-[2.5px] w-1/2 bg-gold-deep" aria-hidden="true" />
+          <span className="hero-rule mx-auto mt-6 block h-[2.5px] bg-gold-deep" aria-hidden="true" />
         </div>
         {descriptionLines.length > 0 ? (
           stacked ? (

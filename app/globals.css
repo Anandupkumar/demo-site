@@ -113,6 +113,10 @@ body {
   letter-spacing: 0.02em;
 }
 
+.hero-rule {
+  width: 13.5rem;
+}
+
 .prose-church .section-rule {
   width: 10.75rem;
 }

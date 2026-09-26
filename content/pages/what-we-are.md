@@ -72,6 +72,10 @@ _He that honoureth not the Son honoureth not the Father which hath sent him._ _J
 
 Salvation by grace through faith, not of works, through the Death, Burial and Resurrection of our Lord Jesus Christ. _Ephesians 2:8-9; 1 Corinthians 15:3-4_
 
+Salvation is by grace through faith, not of works, by believing the Lord Jesus Christ is the One True God, the Father Himself, and through His Death, Burial and Resurrection.
+
+_John 8:24; 1 Corinthians 15:1-4_
+
 ### One baptism
 
 Baptized by one Spirit into one Body, the Body of Christ. _1 Corinthians 12:13_
