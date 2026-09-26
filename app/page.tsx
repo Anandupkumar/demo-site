@@ -96,18 +96,17 @@ export default function HomePage() {
             ) : null}
             {site.acts242 ? (
               <p className="mt-6 italic">
-                {site.acts242.slice(
-                  0,
-                  site.acts242.lastIndexOf("breaking of bread"),
-                )}
-                <span className="whitespace-nowrap">
-                  {site.acts242.slice(
-                    site.acts242.lastIndexOf("breaking of bread"),
-                    site.acts242.lastIndexOf("and in prayers"),
-                  )}
+                <span className="sm:hidden">
+                  {site.acts242.slice(0, site.acts242.lastIndexOf("breaking of bread"))}
+                  <span className="block whitespace-nowrap">
+                    {site.acts242.slice(site.acts242.lastIndexOf("breaking of bread"))}
+                  </span>
                 </span>
-                <span className="block">
-                  {site.acts242.slice(site.acts242.lastIndexOf("and in prayers"))}
+                <span className="hidden sm:block">
+                  {site.acts242.slice(0, site.acts242.lastIndexOf("and in prayers"))}
+                  <span className="block">
+                    {site.acts242.slice(site.acts242.lastIndexOf("and in prayers"))}
+                  </span>
                 </span>
               </p>
             ) : null}
