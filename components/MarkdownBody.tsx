@@ -14,6 +14,7 @@ const CREED_LINE = "one Lord. one faith. one baptism.";
 const WORSHIP_LINE = "Our worship is to the Lord Jesus Christ.";
 const HEAD_LINE = "Autonomous local church with Christ as Head.";
 const REVEALED_LINE = "One God who has fully revealed Himself in Jesus Christ.";
+const NAME_LINE = "His Name is Jesus Christ.";
 const SECTION_RULE =
   "section-rule mx-auto mt-3 block h-[2.5px] bg-gold-deep";
 const SCRIPTURE_REF =
@@ -198,6 +199,10 @@ export function MarkdownBody({
 
             if (textOf(children).includes(SAVIOUR_LINE)) {
               return <p>{withMobileLine(children, SAVIOUR_LINE)}</p>;
+            }
+
+            if (textOf(children).includes(NAME_LINE)) {
+              return <p>{withMobileLine(children, NAME_LINE)}</p>;
             }
 
             return <p>{children}</p>;
