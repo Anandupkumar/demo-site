@@ -167,11 +167,14 @@ export function MarkdownBody({
               );
             }
 
-            if (textOf(children).trim() === HEAD_LINE) {
+            if (textOf(children).trim().startsWith(HEAD_LINE)) {
+              const nodes = Array.isArray(children) ? children : [children];
+              const refs = nodes.filter((node) => isScriptureRef(textOf(node)));
               return (
                 <p>
                   Autonomous local church with{" "}
                   <span className="block sm:inline">Christ as Head.</span>
+                  {refs}
                 </p>
               );
             }

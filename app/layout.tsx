@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Libre_Baskerville } from "next/font/google";
+import { ConsentProvider } from "@/components/ConsentProvider";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
@@ -34,11 +35,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en-GB" className={`${baskerville.variable} h-full`}>
       <body className="min-h-full flex flex-col bg-parchment font-body antialiased">
-        <JsonLd site={site} />
-        <ScrollToTop />
-        <Header name={site.name} />
-        <div className="flex-1">{children}</div>
-        <Footer site={site} />
+        <ConsentProvider>
+          <JsonLd site={site} />
+          <ScrollToTop />
+          <Header name={site.name} />
+          <div className="flex-1">{children}</div>
+          <Footer site={site} />
+        </ConsentProvider>
       </body>
     </html>
   );

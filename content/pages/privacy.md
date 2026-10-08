@@ -8,7 +8,7 @@ Manchester Apostolic Brethren Church is committed to protecting your privacy and
 
 We collect personal information that you voluntarily provide to us when you interact with our church. This may include your name, email address, phone number, home address, and details relating to your involvement in church life. We also keep secure records of financial donations for accounting and Gift Aid purposes where applicable.
 
-We may also collect basic technical data when you visit our website, such as your IP address and browser type, to help us improve our website.
+If you consent to analytics cookies, we also collect basic technical data when you visit our website, such as your browser type, device, and the pages you visit, to help us improve our website. See section 5 for details.
 
 ## 2. How We Use Your Information
 
@@ -32,7 +32,18 @@ Your data is only accessible to authorised church leaders and administrators who
 
 Your information is stored securely and protected using appropriate technical and organisational measures. We retain your personal data only for as long as necessary to fulfil the purposes for which it was collected or as required by law.
 
-## 5. Your Rights
+## 5. Cookies
+
+Cookies are small text files stored on your device when you visit our website. We use two kinds:
+
+- **Essential cookies** are needed for the website to work. We use one: `cookie_consent`, which remembers that you accepted our cookie policy. It lasts for 6 months.
+- **Analytics cookies** are set after you click "Accept" on our cookie notice. We use Google Analytics to understand how visitors use our website so we can improve it. Google Analytics sets `_ga` and `_ga_<ID>` cookies, which last for up to 2 years. Google processes this data on our behalf.
+
+No analytics cookies are set until you click "Accept".
+
+You can block or delete cookies at any time through your browser settings. If you delete the `cookie_consent` cookie, we will ask you again on your next visit.
+
+## 6. Your Rights
 
 Under UK data protection law, you have the right to:
 
@@ -44,7 +55,7 @@ Under UK data protection law, you have the right to:
 
 To exercise any of these rights, please contact us at: [info@manchesterapostolicbrethrenchurch.org](mailto:info@manchesterapostolicbrethrenchurch.org)
 
-## 6. Contact Us
+## 7. Contact Us
 
 If you have any questions or concerns about this Privacy Policy or how we handle your data, please contact:
 

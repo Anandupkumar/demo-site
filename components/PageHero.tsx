@@ -25,7 +25,15 @@ export function PageHero({ title, description, accent, compact = false }: PageHe
                 : "text-center font-heading text-4xl font-bold uppercase tracking-[0.04em] leading-[1.15] sm:text-5xl"
             }
           >
-            {title}
+            {title === "Join us for fellowship" ? (
+              <>
+                <span className="block whitespace-nowrap sm:inline">Join us</span>{" "}
+                <span className="block whitespace-nowrap sm:inline">for</span>{" "}
+                <span className="block whitespace-nowrap sm:inline">fellowship</span>
+              </>
+            ) : (
+              title
+            )}
           </h1>
           <span className="hero-rule mx-auto mt-6 block h-[2.5px] bg-gold-deep" aria-hidden="true" />
         </div>

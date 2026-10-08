@@ -9,15 +9,15 @@ lead: We use only the King James Version for study and preaching. All Scripture 
 
 We are a local, independent Christian church that gathers in the Name of the Lord Jesus Christ.
 
-If you want to know what we look like on a Sunday, we are like Open Brethren in practice and in church order. But unlike most Brethren assemblies, we are **not Nicene creedal**: we do not hold to the Trinity doctrine formulated at the Council of Nicaea in AD 325 (One God existing eternally in three co-equal divine persons). **We hold to the Apostolic doctrine: One God who has fully revealed Himself in Jesus Christ;** the Father, Son and Holy Ghost is One God and His Name is Jesus Christ. _Matthew 28:19; Acts 2:38_
+If you want to know what we look like on a Sunday, we are like Open Brethren in practice and in church order. But unlike most Brethren assemblies, we are **not Nicene creedal**: we do not hold to the Trinity doctrine formulated at the Council of Nicaea in AD 325 (One God existing eternally in three co-equal divine persons). We hold to the Apostolic doctrine of the Scriptures as held from the beginning, prior to the creeds: **One God who has fully revealed Himself in Jesus Christ.** The Father, Son and Holy Ghost is One God and His Name is Jesus Christ. _Matthew 28:19; Acts 2:38_
 
 _For in him dwelleth all the fulness of the Godhead bodily._ _Colossians 2:9_
 
 ## Open Brethren in practice
 
-Autonomous local church with Christ as Head.
+Autonomous local church with Christ as Head. _Colossians 1:18_
 
-No central denomination.
+No central denomination. _1 Peter 5:2_
 
 Plurality of elders in every church. _Acts 14:23_
 
@@ -25,11 +25,11 @@ No clergy / laity divide.\
 Priesthood of all believers with open ministry as the Spirit leads. _1 Corinthians 14:26_
 
 Quiet, reverent worship.\
-No band, no instruments, simple congregational singing to the Lord.
+No band, no instruments, simple congregational singing to the Lord. _1 Corinthians 14:40; Ephesians 5:19_
 
 Women do not teach in the church. _1 Timothy 2:12_
 
-No formal membership roll.
+No formal membership roll. _Acts 2:47; 2 Timothy 2:19_
 
 Weekly breaking of bread. _Acts 20:7_
 
