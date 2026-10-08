@@ -70,7 +70,7 @@ _He that honoureth not the Son honoureth not the Father which hath sent him._ _J
 
 ### One faith
 
-Salvation is by grace through faith, not of works, by believing that the Lord Jesus Christ is the One True God, the Father Himself, and that He died for our sins, was buried, and rose again.
+Salvation is by grace through faith, not of works, by believing that the Lord Jesus Christ is the One True God, the Father Himself manifest, and that He died for our sins, was buried, and rose again.
 
 _John 8:24; 1 Corinthians 15:1-4; Ephesians 2:8-9_
 
