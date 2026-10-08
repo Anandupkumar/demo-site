@@ -40,7 +40,7 @@ function withGodLine(children: ReactNode): ReactNode {
       );
       continue;
     }
-    if (isValidElement(node) && textOf(node).includes("He is the true God")) {
+    if (isValidElement(node) && textOf(node).includes("This is the true God")) {
       result.push(
         <span key="true-god" className="block whitespace-nowrap sm:inline">
           {node}

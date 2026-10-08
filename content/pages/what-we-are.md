@@ -50,7 +50,7 @@ Scripture states that the only God is the Father, and that this God was manifest
 
 _One God and Father of all, who is above all, and through all, and in you all._ _Ephesians 4:6_
 
-The One God and Father of all is the Lord Jesus Christ. _He is the true God, and eternal life._ _1 John 5:20_
+The One God and Father of all is the Lord Jesus Christ. _This is the true God, and eternal life._ _1 John 5:20_
 
 Jesus Christ did not begin at Bethlehem. He, being in the form of the invisible God, with all the fullness of the Godhead dwelling in Him, is Eternal. When the fullness of the time had come, He was made flesh in the likeness of men, taking upon Himself the form of a servant. Being begotten as the Son of God and sent, He was obedient unto God, the invisible Spirit that dwelt in Him.
 
