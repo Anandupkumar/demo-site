@@ -13,13 +13,14 @@ const SAVIOUR_LINE = "Lord and Saviour Jesus Christ.";
 const CREED_LINE = "one Lord. one faith. one baptism.";
 const WORSHIP_LINE = "Our worship is to the Lord Jesus Christ.";
 const HEAD_LINE = "Autonomous local church with Christ as Head.";
-const ETERNAL_LINE = "(One God existing eternally";
+const CONSTANTINOPLE_LINE = "and Constantinople in AD 381";
+const ETERNAL_LINE = "(one God existing eternally";
 const APOSTOLIC_START = "We hold to the Apostolic doctrine";
 const REVEALED_LINE = "One God who has fully revealed Himself in Jesus Christ.";
 const REVEALED_FIRST = "One God who has fully revealed";
 const REVEALED_SECOND = "Himself in Jesus Christ.";
-const FATHER_LINE = "The Father, The Son and the Holy Ghost";
-const IN_ONE_GOD = "in One God and";
+const FATHER_LINE = "The Father, the Son and the Holy Ghost";
+const IN_ONE_GOD = "is One God and";
 const NAME_LINE = "His Name is Jesus Christ.";
 const SECTION_RULE =
   "section-rule mx-auto mt-3 block h-[2.5px] bg-gold-deep";
@@ -92,25 +93,31 @@ function mobileLine(text: string, key: string) {
   );
 }
 
+function withMobileBreaks(text: string, phrases: string[]): ReactNode {
+  const parts: ReactNode[] = [];
+  let rest = text;
+
+  phrases.forEach((phrase) => {
+    const at = rest.indexOf(phrase);
+    if (at === -1) return;
+    parts.push(rest.slice(0, at));
+    parts.push(<br key={phrase} className="sm:hidden" />);
+    rest = rest.slice(at);
+  });
+
+  parts.push(rest);
+  return parts;
+}
+
 function withDoctrineLines(children: ReactNode): ReactNode {
   const nodes = Array.isArray(children) ? children : [children];
 
   return nodes.map((node, index) => {
     if (typeof node === "string" && node.includes(APOSTOLIC_START)) {
       const at = node.indexOf(APOSTOLIC_START);
-      const before = node.slice(0, at);
-      const eternalAt = before.indexOf(ETERNAL_LINE);
       return (
         <Fragment key={index}>
-          {eternalAt === -1 ? (
-            before
-          ) : (
-            <>
-              {before.slice(0, eternalAt)}
-              <br className="sm:hidden" />
-              {before.slice(eternalAt)}
-            </>
-          )}
+          {withMobileBreaks(node.slice(0, at), [CONSTANTINOPLE_LINE, ETERNAL_LINE])}
           <br className="sm:hidden" />
           {node.slice(at)}
         </Fragment>

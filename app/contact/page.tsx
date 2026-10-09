@@ -9,7 +9,7 @@ const page = getPage("contact");
 
 export const metadata: Metadata = {
   title: page.title,
-  description: page.description,
+  ...(page.description ? { description: page.description } : {}),
 };
 
 export default function ContactPage() {
@@ -18,7 +18,7 @@ export default function ContactPage() {
 
   return (
     <>
-      <PageHero title={page.title} description={page.description} />
+      <PageHero title={page.title} />
       <section className="bg-parchment">
         <Container className="max-w-3xl py-16 sm:py-20 text-center">
           <div>
