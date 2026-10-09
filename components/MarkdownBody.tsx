@@ -13,7 +13,13 @@ const SAVIOUR_LINE = "Lord and Saviour Jesus Christ.";
 const CREED_LINE = "one Lord. one faith. one baptism.";
 const WORSHIP_LINE = "Our worship is to the Lord Jesus Christ.";
 const HEAD_LINE = "Autonomous local church with Christ as Head.";
+const ETERNAL_LINE = "(One God existing eternally";
+const APOSTOLIC_START = "We hold to the Apostolic doctrine";
 const REVEALED_LINE = "One God who has fully revealed Himself in Jesus Christ.";
+const REVEALED_FIRST = "One God who has fully revealed";
+const REVEALED_SECOND = "Himself in Jesus Christ.";
+const FATHER_LINE = "The Father, The Son and the Holy Ghost";
+const IN_ONE_GOD = "in One God and";
 const NAME_LINE = "His Name is Jesus Christ.";
 const SECTION_RULE =
   "section-rule mx-auto mt-3 block h-[2.5px] bg-gold-deep";
@@ -76,6 +82,90 @@ function withExamineLine(children: ReactNode): ReactNode {
   }
 
   return result;
+}
+
+function mobileLine(text: string, key: string) {
+  return (
+    <span key={key} className="block whitespace-nowrap sm:inline">
+      {text}
+    </span>
+  );
+}
+
+function withDoctrineLines(children: ReactNode): ReactNode {
+  const nodes = Array.isArray(children) ? children : [children];
+
+  return nodes.map((node, index) => {
+    if (typeof node === "string" && node.includes(APOSTOLIC_START)) {
+      const at = node.indexOf(APOSTOLIC_START);
+      const before = node.slice(0, at);
+      const eternalAt = before.indexOf(ETERNAL_LINE);
+      return (
+        <Fragment key={index}>
+          {eternalAt === -1 ? (
+            before
+          ) : (
+            <>
+              {before.slice(0, eternalAt)}
+              <br className="sm:hidden" />
+              {before.slice(eternalAt)}
+            </>
+          )}
+          <br className="sm:hidden" />
+          {node.slice(at)}
+        </Fragment>
+      );
+    }
+
+    if (typeof node === "string" && node.includes(FATHER_LINE)) {
+      const at = node.indexOf(FATHER_LINE);
+      const before = node.slice(0, at);
+      const phrase = node.slice(at);
+      const inAt = phrase.indexOf(IN_ONE_GOD);
+      const father = phrase.slice(0, inAt).trimEnd();
+      const rest = phrase.slice(inAt);
+      const nameAt = rest.indexOf(NAME_LINE);
+      const inOneGod = (nameAt === -1 ? rest : rest.slice(0, nameAt)).trimEnd();
+      const trailing = nameAt === -1 ? (rest.match(/\s*$/)?.[0] ?? "") : "";
+
+      return (
+        <Fragment key={index}>
+          {before}
+          {mobileLine(father, "father")} {mobileLine(inOneGod, "in-one-god")}
+          {trailing}
+          {nameAt === -1 ? null : (
+            <>
+              {" "}
+              <strong className="block whitespace-nowrap sm:inline">{NAME_LINE}</strong>
+              {rest.slice(nameAt + NAME_LINE.length)}
+            </>
+          )}
+        </Fragment>
+      );
+    }
+
+    if (isValidElement(node) && textOf(node).trim() === REVEALED_LINE) {
+      return (
+        <Fragment key={index}>
+          <br className="sm:hidden" />
+          <strong>
+            {mobileLine(REVEALED_FIRST, "revealed-first")}{" "}
+            {mobileLine(REVEALED_SECOND, "revealed-second")}
+          </strong>
+        </Fragment>
+      );
+    }
+
+    if (isValidElement(node) && textOf(node).trim() === NAME_LINE) {
+      return (
+        <strong key={index} className="block whitespace-nowrap sm:inline">
+          {NAME_LINE}
+        </strong>
+      );
+    }
+
+    return <Fragment key={index}>{node}</Fragment>;
+  });
 }
 
 function withMobileLine(node: ReactNode, phrase: string): ReactNode {
@@ -201,23 +291,14 @@ export function MarkdownBody({
               return <p>{withMobileLine(children, SAVIOUR_LINE)}</p>;
             }
 
-            if (textOf(children).includes(NAME_LINE)) {
-              return <p>{withMobileLine(children, NAME_LINE)}</p>;
+            if (
+              textOf(children).includes(APOSTOLIC_START) &&
+              textOf(children).includes(NAME_LINE)
+            ) {
+              return <p>{withDoctrineLines(children)}</p>;
             }
 
             return <p>{children}</p>;
-          },
-          strong({ children }) {
-            if (textOf(children).includes(REVEALED_LINE)) {
-              return (
-                <>
-                  <br className="sm:hidden" />
-                  <strong>{children}</strong>
-                </>
-              );
-            }
-
-            return <strong>{children}</strong>;
           },
           em({ children }) {
             if (isScriptureRef(textOf(children))) {

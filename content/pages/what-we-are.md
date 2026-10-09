@@ -9,7 +9,7 @@ lead: We use only the King James Version for study and preaching. All Scripture 
 
 We are a local, independent Christian church that gathers in the Name of the Lord Jesus Christ.
 
-If you want to know what we look like on a Sunday, we are like Open Brethren in practice and in church order. But unlike most Brethren assemblies, we are **not Nicene creedal**: we do not hold to the Trinity doctrine formulated at the Council of Nicaea in AD 325 (One God existing eternally in three co-equal divine persons). We hold to the Apostolic doctrine of the Scriptures as held from the beginning, prior to the creeds: **One God who has fully revealed Himself in Jesus Christ.** The Father, Son and Holy Ghost is One God and His Name is Jesus Christ. _Matthew 28:19; Acts 2:38_
+If you want to know what we look like on a Sunday, we are like Open Brethren in practice and in church order. But unlike most Brethren assemblies, we are **not Nicene creedal**: we do not hold to the Trinity doctrine formulated at the Councils of Nicaea in AD 325 and Constantinople in AD 381 (One God existing eternally in three co-equal divine persons). We hold to the Apostolic doctrine of the Scriptures as held from the beginning, prior to the creeds: **One God who has fully revealed Himself in Jesus Christ.** The Father, The Son and the Holy Ghost in One God and **His Name is Jesus Christ.** _Matthew 28:19; Acts 2:38_
 
 _For in him dwelleth all the fulness of the Godhead bodily._ _Colossians 2:9_
 

@@ -34,12 +34,25 @@ Your information is stored securely and protected using appropriate technical an
 
 ## 5. Cookies
 
-Cookies are small text files stored on your device when you visit our website. We use two kinds:
+### Essential Cookies
 
-- **Essential cookies** are needed for the website to work. We use one: `cookie_consent`, which remembers that you accepted our cookie policy. It lasts for 6 months.
-- **Analytics cookies** are set after you click "Accept" on our cookie notice. We use Google Analytics to understand how visitors use our website so we can improve it. Google Analytics sets `_ga` and `_ga_<ID>` cookies, which last for up to 2 years. Google processes this data on our behalf.
+This website requires essential cookies to function properly. We use one essential cookie:
+
+`cookie_consent` - Remembers that you have accepted our cookie policy. It lasts for 6 months.
+
+### Analytics Cookies
+
+Analytics cookies are only set after you click "Accept" on our cookie notice.
+
+We use Google Analytics to understand how visitors use our website so we can improve it. Google Analytics sets the following cookies:
+
+- `_ga` and `_ga_<ID>` - These last for up to 2 years.
+
+Google processes this data on our behalf.
 
 No analytics cookies are set until you click "Accept".
+
+### Managing Cookies
 
 You can block or delete cookies at any time through your browser settings. If you delete the `cookie_consent` cookie, we will ask you again on your next visit.
 
